@@ -7,6 +7,7 @@ export default function FlashCards (props) {
       <Card cardId={props.card.cardNumber}
             term={props.card.term}
             definition={props.card.definition}
+            getRandomCard={props.getRandomCard}
             removeFromDeck={props.removeFromDeck}
             // addDuplicate={props.card.addDuplicate} 
             />

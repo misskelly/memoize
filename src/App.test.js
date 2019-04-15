@@ -1,17 +1,14 @@
 import React from 'react';
 import { flashCards, catergories } from './api'
+import { mockCards, mockCurrentCard } from './mockData/mockData'
+
 import App from './App';
 import { shallow } from 'enzyme';
 
 
 const mockRandomNumber = jest.fn();
-
-const mockCard = {
-  "categoryId": 1,
-  "cardNumber": 103,
-  "term": "JSX",
-  "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component"
-}
+const mockRemoveFromDeck = jest.fn();
+const mockGetRandomCard = jest.fn();
 
 describe('App', () => {
   let wrapper;
@@ -28,7 +25,7 @@ describe('App', () => {
   // it('should have the proper default state', () => {
   //   expect(wrapper.state()).toEqual({
   //     allCards: flashCards,
-  //     currentCard: null });
+  //     currentCard:flashCards[0] });
   // });
 
 
@@ -45,11 +42,7 @@ describe('App', () => {
 
   // });
 
-  // it('should update the state of the question count on change', () => {
+  
 
-  //   expect(wrapper.state()).toEqual({ questionCount: 0, });
-  //   wrapper.instance().updateCount( {target: {value: 7}} );
-  //   expect(wrapper.state()).toEqual({ questionCount: 7});
-  // });
 
 });

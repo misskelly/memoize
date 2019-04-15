@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { flashCards} from './api'
-import './App.css';
 import Header from './header/Header'
 import Menu from './menu/Menu'
 import FlashCards from './flashCards/FlashCards'
@@ -13,6 +12,7 @@ export default class App extends Component {
       currentCard: flashCards[0]
     }
     this.removeFromDeck = this.removeFromDeck.bind(this);
+    this.getRandomCard = this.getRandomCard.bind(this);
   }
 
   updateDeck = (newDeck) => {
@@ -42,13 +42,15 @@ export default class App extends Component {
     }
     
     render () {
+      console.log(this.state.allCards.length)
       return (
-        <main className="appContainer">
+        <main className='appContainer'>
           {/* <Header /> */}
           {/* <Menu /> */}
           <FlashCards deck={this.state.allCards}
-                    card={this.state.currentCard}
-                    removeFromDeck={this.removeFromDeck}
+                      card={this.state.currentCard}
+                      getRandomCard={this.state.getRandomCard}
+                      removeFromDeck={this.removeFromDeck}
                     />
         </main>
     );
