@@ -25,25 +25,25 @@ describe('App', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should have the proper default state', () => {
-    expect(wrapper.state()).toEqual({
-      allCards: flashCards,
-      currentCard: null });
-  });
+  // it('should have the proper default state', () => {
+  //   expect(wrapper.state()).toEqual({
+  //     allCards: flashCards,
+  //     currentCard: null });
+  // });
 
 
 
-  it('should update the current card', () => {
-    expect(wrapper.state()).toEqual({
-      allCards: flashCards,
-      currentCard: null
-    });
-      wrapper.instance().updateCurrentCard(mockCard);
-    expect(wrapper.state()).toEqual({
-      allCards: flashCards,
-      currentCard: mockCard});
+  // it('should update the current card', () => {
+  //   expect(wrapper.state()).toEqual({
+  //     allCards: flashCards,
+  //     currentCard: null
+  //   });
+  //     wrapper.instance().updateCurrentCard(mockCard);
+  //   expect(wrapper.state()).toEqual({
+  //     allCards: flashCards,
+  //     currentCard: mockCard});
 
-  });
+  // });
 
   // it('should update the state of the question count on change', () => {
 

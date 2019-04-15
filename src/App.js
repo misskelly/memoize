@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { flashCards, catergories} from './api'
-// import './App.css';
+import { flashCards} from './api'
+import './App.css';
 import Header from './header/Header'
 import Menu from './menu/Menu'
 import FlashCards from './flashCards/FlashCards'
@@ -44,8 +44,8 @@ export default class App extends Component {
     render () {
       return (
         <main className="appContainer">
-          <Header />
-          <Menu />
+          {/* <Header /> */}
+          {/* <Menu /> */}
           <FlashCards deck={this.state.allCards}
                     card={this.state.currentCard}
                     removeFromDeck={this.removeFromDeck}
