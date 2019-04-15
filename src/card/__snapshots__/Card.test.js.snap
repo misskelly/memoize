@@ -33,6 +33,22 @@ ShallowWrapper {
           >
             .simulate()
           </h4>
+          <div
+            className="iconBtnWrapper"
+          >
+            <img
+              alt="I am a little trash can! Click me to remove this card from the deck."
+              className="icon trash"
+              role="button"
+              src="trash.png"
+            />
+            <img
+              alt="I am a curved arrow! Click me to filp the card over and see the answer."
+              className="icon arrow"
+              role="button"
+              src="flipArrow.png"
+            />
+          </div>
         </article>,
         <article
           className="definitionSide card"
@@ -79,26 +95,100 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <h4
-            className="termText"
-          >
-            .simulate()
-          </h4>,
+          "children": Array [
+            <h4
+              className="termText"
+            >
+              .simulate()
+            </h4>,
+            <div
+              className="iconBtnWrapper"
+            >
+              <img
+                alt="I am a little trash can! Click me to remove this card from the deck."
+                className="icon trash"
+                role="button"
+                src="trash.png"
+              />
+              <img
+                alt="I am a curved arrow! Click me to filp the card over and see the answer."
+                className="icon arrow"
+                role="button"
+                src="flipArrow.png"
+              />
+            </div>,
+          ],
           "className": "termSide card",
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": ".simulate()",
-            "className": "termText",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": ".simulate()",
+              "className": "termText",
+            },
+            "ref": null,
+            "rendered": ".simulate()",
+            "type": "h4",
           },
-          "ref": null,
-          "rendered": ".simulate()",
-          "type": "h4",
-        },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <img
+                  alt="I am a little trash can! Click me to remove this card from the deck."
+                  className="icon trash"
+                  role="button"
+                  src="trash.png"
+                />,
+                <img
+                  alt="I am a curved arrow! Click me to filp the card over and see the answer."
+                  className="icon arrow"
+                  role="button"
+                  src="flipArrow.png"
+                />,
+              ],
+              "className": "iconBtnWrapper",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "I am a little trash can! Click me to remove this card from the deck.",
+                  "className": "icon trash",
+                  "role": "button",
+                  "src": "trash.png",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "I am a curved arrow! Click me to filp the card over and see the answer.",
+                  "className": "icon arrow",
+                  "role": "button",
+                  "src": "flipArrow.png",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+            ],
+            "type": "div",
+          },
+        ],
         "type": "article",
       },
       Object {
@@ -255,6 +345,22 @@ ShallowWrapper {
             >
               .simulate()
             </h4>
+            <div
+              className="iconBtnWrapper"
+            >
+              <img
+                alt="I am a little trash can! Click me to remove this card from the deck."
+                className="icon trash"
+                role="button"
+                src="trash.png"
+              />
+              <img
+                alt="I am a curved arrow! Click me to filp the card over and see the answer."
+                className="icon arrow"
+                role="button"
+                src="flipArrow.png"
+              />
+            </div>
           </article>,
           <article
             className="definitionSide card"
@@ -301,26 +407,100 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <h4
-              className="termText"
-            >
-              .simulate()
-            </h4>,
+            "children": Array [
+              <h4
+                className="termText"
+              >
+                .simulate()
+              </h4>,
+              <div
+                className="iconBtnWrapper"
+              >
+                <img
+                  alt="I am a little trash can! Click me to remove this card from the deck."
+                  className="icon trash"
+                  role="button"
+                  src="trash.png"
+                />
+                <img
+                  alt="I am a curved arrow! Click me to filp the card over and see the answer."
+                  className="icon arrow"
+                  role="button"
+                  src="flipArrow.png"
+                />
+              </div>,
+            ],
             "className": "termSide card",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": ".simulate()",
-              "className": "termText",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": ".simulate()",
+                "className": "termText",
+              },
+              "ref": null,
+              "rendered": ".simulate()",
+              "type": "h4",
             },
-            "ref": null,
-            "rendered": ".simulate()",
-            "type": "h4",
-          },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <img
+                    alt="I am a little trash can! Click me to remove this card from the deck."
+                    className="icon trash"
+                    role="button"
+                    src="trash.png"
+                  />,
+                  <img
+                    alt="I am a curved arrow! Click me to filp the card over and see the answer."
+                    className="icon arrow"
+                    role="button"
+                    src="flipArrow.png"
+                  />,
+                ],
+                "className": "iconBtnWrapper",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "I am a little trash can! Click me to remove this card from the deck.",
+                    "className": "icon trash",
+                    "role": "button",
+                    "src": "trash.png",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "I am a curved arrow! Click me to filp the card over and see the answer.",
+                    "className": "icon arrow",
+                    "role": "button",
+                    "src": "flipArrow.png",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+              ],
+              "type": "div",
+            },
+          ],
           "type": "article",
         },
         Object {

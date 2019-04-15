@@ -1,1 +1,11 @@
 // FlashCards.scss
+
+
+
+.flashCards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: hsl(195, 53%, 79%);
+  padding-top: 3rem;
+}

@@ -1,1 +1,30 @@
 // Card.scss
+
+
+.featuredCard {
+  width: 40%;
+}
+// TERM SIDE
+
+.termSide {
+  text-align: center;
+  border: $temp-border;
+}
+
+.termText {
+  font-family: $term-font;
+  font-size: 3rem; 
+}
+
+.iconBtnWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  border: $temp-border;
+  width: 4rem;
+  height: 4rem;
+}
+
+// DEFINITION SIDE
