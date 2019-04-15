@@ -24,14 +24,19 @@ export default class Card extends Component {
                     lable='Remove this flashcard, this one is memorized!'
                     removeFromDeck={this.props.removeFromDeck}
                     cardId={this.props.cardId} 
+                    getRandomCard={this.props.getRandomCard}
                     />
             <Button type='almostBtn'
                     buttonText='So Close!'
                     lable='Better come back to that one later.' 
+                    getRandomCard={this.props.getRandomCard}
                     />
             <Button type='wrongAnswerBtn'
                     buttonText='Not a clue.'
-                    lable='Yikes, I need extra review on that one! Better add a duplicate!'
+                    lable='Yikes, I need extra review on that one!' 
+                    getRandomCard={this.props.getRandomCard}
+
+                    // Better add a duplicate!'
                     // addDuplicate={props.addDuplicate} 
                     cardId={this.props.cardId} 
                     />

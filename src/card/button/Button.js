@@ -8,6 +8,7 @@ export default class Button extends Component {
     } 
     // else if (e.target.id === 'wrongAnswerBtn'){
     // }
+    this.props.getRandomCard();
   }
   render() {
     return (

@@ -48,19 +48,22 @@ ShallowWrapper {
             <Button
               buttonText="Nailed it!"
               cardId={214}
+              getRandomCard={[MockFunction]}
               lable="Remove this flashcard, this one is memorized!"
               removeFromDeck={[MockFunction]}
               type="removeBtn"
             />
             <Button
               buttonText="So Close!"
+              getRandomCard={[MockFunction]}
               lable="Better come back to that one later."
               type="almostBtn"
             />
             <Button
               buttonText="Not a clue."
               cardId={214}
-              lable="Yikes, I need extra review on that one! Better add a duplicate!"
+              getRandomCard={[MockFunction]}
+              lable="Yikes, I need extra review on that one!"
               type="wrongAnswerBtn"
             />
           </form>
@@ -115,19 +118,22 @@ ShallowWrapper {
               <Button
                 buttonText="Nailed it!"
                 cardId={214}
+                getRandomCard={[MockFunction]}
                 lable="Remove this flashcard, this one is memorized!"
                 removeFromDeck={[MockFunction]}
                 type="removeBtn"
               />
               <Button
                 buttonText="So Close!"
+                getRandomCard={[MockFunction]}
                 lable="Better come back to that one later."
                 type="almostBtn"
               />
               <Button
                 buttonText="Not a clue."
                 cardId={214}
-                lable="Yikes, I need extra review on that one! Better add a duplicate!"
+                getRandomCard={[MockFunction]}
+                lable="Yikes, I need extra review on that one!"
                 type="wrongAnswerBtn"
               />
             </form>,
@@ -157,19 +163,22 @@ ShallowWrapper {
                 <Button
                   buttonText="Nailed it!"
                   cardId={214}
+                  getRandomCard={[MockFunction]}
                   lable="Remove this flashcard, this one is memorized!"
                   removeFromDeck={[MockFunction]}
                   type="removeBtn"
                 />,
                 <Button
                   buttonText="So Close!"
+                  getRandomCard={[MockFunction]}
                   lable="Better come back to that one later."
                   type="almostBtn"
                 />,
                 <Button
                   buttonText="Not a clue."
                   cardId={214}
-                  lable="Yikes, I need extra review on that one! Better add a duplicate!"
+                  getRandomCard={[MockFunction]}
+                  lable="Yikes, I need extra review on that one!"
                   type="wrongAnswerBtn"
                 />,
               ],
@@ -184,6 +193,7 @@ ShallowWrapper {
                 "props": Object {
                   "buttonText": "Nailed it!",
                   "cardId": 214,
+                  "getRandomCard": [MockFunction],
                   "lable": "Remove this flashcard, this one is memorized!",
                   "removeFromDeck": [MockFunction],
                   "type": "removeBtn",
@@ -198,6 +208,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "buttonText": "So Close!",
+                  "getRandomCard": [MockFunction],
                   "lable": "Better come back to that one later.",
                   "type": "almostBtn",
                 },
@@ -212,7 +223,8 @@ ShallowWrapper {
                 "props": Object {
                   "buttonText": "Not a clue.",
                   "cardId": 214,
-                  "lable": "Yikes, I need extra review on that one! Better add a duplicate!",
+                  "getRandomCard": [MockFunction],
+                  "lable": "Yikes, I need extra review on that one!",
                   "type": "wrongAnswerBtn",
                 },
                 "ref": null,
@@ -258,19 +270,22 @@ ShallowWrapper {
               <Button
                 buttonText="Nailed it!"
                 cardId={214}
+                getRandomCard={[MockFunction]}
                 lable="Remove this flashcard, this one is memorized!"
                 removeFromDeck={[MockFunction]}
                 type="removeBtn"
               />
               <Button
                 buttonText="So Close!"
+                getRandomCard={[MockFunction]}
                 lable="Better come back to that one later."
                 type="almostBtn"
               />
               <Button
                 buttonText="Not a clue."
                 cardId={214}
-                lable="Yikes, I need extra review on that one! Better add a duplicate!"
+                getRandomCard={[MockFunction]}
+                lable="Yikes, I need extra review on that one!"
                 type="wrongAnswerBtn"
               />
             </form>
@@ -325,19 +340,22 @@ ShallowWrapper {
                 <Button
                   buttonText="Nailed it!"
                   cardId={214}
+                  getRandomCard={[MockFunction]}
                   lable="Remove this flashcard, this one is memorized!"
                   removeFromDeck={[MockFunction]}
                   type="removeBtn"
                 />
                 <Button
                   buttonText="So Close!"
+                  getRandomCard={[MockFunction]}
                   lable="Better come back to that one later."
                   type="almostBtn"
                 />
                 <Button
                   buttonText="Not a clue."
                   cardId={214}
-                  lable="Yikes, I need extra review on that one! Better add a duplicate!"
+                  getRandomCard={[MockFunction]}
+                  lable="Yikes, I need extra review on that one!"
                   type="wrongAnswerBtn"
                 />
               </form>,
@@ -367,19 +385,22 @@ ShallowWrapper {
                   <Button
                     buttonText="Nailed it!"
                     cardId={214}
+                    getRandomCard={[MockFunction]}
                     lable="Remove this flashcard, this one is memorized!"
                     removeFromDeck={[MockFunction]}
                     type="removeBtn"
                   />,
                   <Button
                     buttonText="So Close!"
+                    getRandomCard={[MockFunction]}
                     lable="Better come back to that one later."
                     type="almostBtn"
                   />,
                   <Button
                     buttonText="Not a clue."
                     cardId={214}
-                    lable="Yikes, I need extra review on that one! Better add a duplicate!"
+                    getRandomCard={[MockFunction]}
+                    lable="Yikes, I need extra review on that one!"
                     type="wrongAnswerBtn"
                   />,
                 ],
@@ -394,6 +415,7 @@ ShallowWrapper {
                   "props": Object {
                     "buttonText": "Nailed it!",
                     "cardId": 214,
+                    "getRandomCard": [MockFunction],
                     "lable": "Remove this flashcard, this one is memorized!",
                     "removeFromDeck": [MockFunction],
                     "type": "removeBtn",
@@ -408,6 +430,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "buttonText": "So Close!",
+                    "getRandomCard": [MockFunction],
                     "lable": "Better come back to that one later.",
                     "type": "almostBtn",
                   },
@@ -422,7 +445,8 @@ ShallowWrapper {
                   "props": Object {
                     "buttonText": "Not a clue.",
                     "cardId": 214,
-                    "lable": "Yikes, I need extra review on that one! Better add a duplicate!",
+                    "getRandomCard": [MockFunction],
+                    "lable": "Yikes, I need extra review on that one!",
                     "type": "wrongAnswerBtn",
                   },
                   "ref": null,
