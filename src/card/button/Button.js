@@ -16,7 +16,7 @@ export default class Button extends Component {
         >
           {this.props.buttonText}
         </button>
-        <label for={this.props.type} className='btnLabel'>
+        <label htmlFor={this.props.type} className='btnLabel'>
           {this.props.lable}
         </label>
       </>

@@ -51,7 +51,7 @@ ShallowWrapper {
         "props": Object {
           "children": undefined,
           "className": "btnLabel",
-          "for": undefined,
+          "htmlFor": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -99,7 +99,7 @@ ShallowWrapper {
           "props": Object {
             "children": undefined,
             "className": "btnLabel",
-            "for": undefined,
+            "htmlFor": undefined,
           },
           "ref": null,
           "rendered": null,

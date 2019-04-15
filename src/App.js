@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { flashCards} from './api'
-import './App.css';
 import Header from './header/Header'
 import Menu from './menu/Menu'
 import FlashCards from './flashCards/FlashCards'
@@ -48,6 +47,7 @@ export default class App extends Component {
           {/* <Menu /> */}
           <FlashCards deck={this.state.allCards}
                       card={this.state.currentCard}
+                      getRandomCard={this.state.getRandomCard}
                       removeFromDeck={this.removeFromDeck}
                     />
         </main>
