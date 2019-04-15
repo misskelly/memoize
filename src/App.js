@@ -47,8 +47,8 @@ export default class App extends Component {
           {/* <Header /> */}
           {/* <Menu /> */}
           <FlashCards deck={this.state.allCards}
-                    card={this.state.currentCard}
-                    removeFromDeck={this.removeFromDeck}
+                      card={this.state.currentCard}
+                      removeFromDeck={this.removeFromDeck}
                     />
         </main>
     );
