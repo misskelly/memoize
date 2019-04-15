@@ -3,7 +3,13 @@
 exports[`Card should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Card />,
+  Symbol(enzyme.__unrendered__): <Card
+    cardId={214}
+    definition="Simulates an event on an element by passing the event name string in as an argument."
+    getRandomCard={[MockFunction]}
+    removeFromDeck={[MockFunction]}
+    term=".simulate()"
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -24,20 +30,26 @@ ShallowWrapper {
         >
           <h4
             className="termText"
-          />
+          >
+            .simulate()
+          </h4>
         </article>,
         <article
           className="definitionSide card"
         >
           <p
             className="definitionText"
-          />
+          >
+            Simulates an event on an element by passing the event name string in as an argument.
+          </p>
           <form
             className="buttons"
           >
             <Button
               buttonText="Nailed it!"
+              cardId={214}
               lable="Remove this flashcard, this one is memorized!"
+              removeFromDeck={[MockFunction]}
               type="removeBtn"
             />
             <Button
@@ -47,6 +59,7 @@ ShallowWrapper {
             />
             <Button
               buttonText="Not a clue."
+              cardId={214}
               lable="Yikes, I need extra review on that one! Better add a duplicate!"
               type="wrongAnswerBtn"
             />
@@ -54,7 +67,7 @@ ShallowWrapper {
         </article>,
       ],
       "className": "featuredCard",
-      "id": undefined,
+      "id": 214,
     },
     "ref": null,
     "rendered": Array [
@@ -65,7 +78,9 @@ ShallowWrapper {
         "props": Object {
           "children": <h4
             className="termText"
-          />,
+          >
+            .simulate()
+          </h4>,
           "className": "termSide card",
         },
         "ref": null,
@@ -74,11 +89,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
+            "children": ".simulate()",
             "className": "termText",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": ".simulate()",
           "type": "h4",
         },
         "type": "article",
@@ -91,13 +106,17 @@ ShallowWrapper {
           "children": Array [
             <p
               className="definitionText"
-            />,
+            >
+              Simulates an event on an element by passing the event name string in as an argument.
+            </p>,
             <form
               className="buttons"
             >
               <Button
                 buttonText="Nailed it!"
+                cardId={214}
                 lable="Remove this flashcard, this one is memorized!"
+                removeFromDeck={[MockFunction]}
                 type="removeBtn"
               />
               <Button
@@ -107,6 +126,7 @@ ShallowWrapper {
               />
               <Button
                 buttonText="Not a clue."
+                cardId={214}
                 lable="Yikes, I need extra review on that one! Better add a duplicate!"
                 type="wrongAnswerBtn"
               />
@@ -121,11 +141,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": undefined,
+              "children": "Simulates an event on an element by passing the event name string in as an argument.",
               "className": "definitionText",
             },
             "ref": null,
-            "rendered": null,
+            "rendered": "Simulates an event on an element by passing the event name string in as an argument.",
             "type": "p",
           },
           Object {
@@ -136,7 +156,9 @@ ShallowWrapper {
               "children": Array [
                 <Button
                   buttonText="Nailed it!"
+                  cardId={214}
                   lable="Remove this flashcard, this one is memorized!"
+                  removeFromDeck={[MockFunction]}
                   type="removeBtn"
                 />,
                 <Button
@@ -146,6 +168,7 @@ ShallowWrapper {
                 />,
                 <Button
                   buttonText="Not a clue."
+                  cardId={214}
                   lable="Yikes, I need extra review on that one! Better add a duplicate!"
                   type="wrongAnswerBtn"
                 />,
@@ -160,9 +183,9 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "buttonText": "Nailed it!",
-                  "cardId": undefined,
+                  "cardId": 214,
                   "lable": "Remove this flashcard, this one is memorized!",
-                  "removeFromDeck": undefined,
+                  "removeFromDeck": [MockFunction],
                   "type": "removeBtn",
                 },
                 "ref": null,
@@ -188,7 +211,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "buttonText": "Not a clue.",
-                  "cardId": undefined,
+                  "cardId": 214,
                   "lable": "Yikes, I need extra review on that one! Better add a duplicate!",
                   "type": "wrongAnswerBtn",
                 },
@@ -217,20 +240,26 @@ ShallowWrapper {
           >
             <h4
               className="termText"
-            />
+            >
+              .simulate()
+            </h4>
           </article>,
           <article
             className="definitionSide card"
           >
             <p
               className="definitionText"
-            />
+            >
+              Simulates an event on an element by passing the event name string in as an argument.
+            </p>
             <form
               className="buttons"
             >
               <Button
                 buttonText="Nailed it!"
+                cardId={214}
                 lable="Remove this flashcard, this one is memorized!"
+                removeFromDeck={[MockFunction]}
                 type="removeBtn"
               />
               <Button
@@ -240,6 +269,7 @@ ShallowWrapper {
               />
               <Button
                 buttonText="Not a clue."
+                cardId={214}
                 lable="Yikes, I need extra review on that one! Better add a duplicate!"
                 type="wrongAnswerBtn"
               />
@@ -247,7 +277,7 @@ ShallowWrapper {
           </article>,
         ],
         "className": "featuredCard",
-        "id": undefined,
+        "id": 214,
       },
       "ref": null,
       "rendered": Array [
@@ -258,7 +288,9 @@ ShallowWrapper {
           "props": Object {
             "children": <h4
               className="termText"
-            />,
+            >
+              .simulate()
+            </h4>,
             "className": "termSide card",
           },
           "ref": null,
@@ -267,11 +299,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": undefined,
+              "children": ".simulate()",
               "className": "termText",
             },
             "ref": null,
-            "rendered": null,
+            "rendered": ".simulate()",
             "type": "h4",
           },
           "type": "article",
@@ -284,13 +316,17 @@ ShallowWrapper {
             "children": Array [
               <p
                 className="definitionText"
-              />,
+              >
+                Simulates an event on an element by passing the event name string in as an argument.
+              </p>,
               <form
                 className="buttons"
               >
                 <Button
                   buttonText="Nailed it!"
+                  cardId={214}
                   lable="Remove this flashcard, this one is memorized!"
+                  removeFromDeck={[MockFunction]}
                   type="removeBtn"
                 />
                 <Button
@@ -300,6 +336,7 @@ ShallowWrapper {
                 />
                 <Button
                   buttonText="Not a clue."
+                  cardId={214}
                   lable="Yikes, I need extra review on that one! Better add a duplicate!"
                   type="wrongAnswerBtn"
                 />
@@ -314,11 +351,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": undefined,
+                "children": "Simulates an event on an element by passing the event name string in as an argument.",
                 "className": "definitionText",
               },
               "ref": null,
-              "rendered": null,
+              "rendered": "Simulates an event on an element by passing the event name string in as an argument.",
               "type": "p",
             },
             Object {
@@ -329,7 +366,9 @@ ShallowWrapper {
                 "children": Array [
                   <Button
                     buttonText="Nailed it!"
+                    cardId={214}
                     lable="Remove this flashcard, this one is memorized!"
+                    removeFromDeck={[MockFunction]}
                     type="removeBtn"
                   />,
                   <Button
@@ -339,6 +378,7 @@ ShallowWrapper {
                   />,
                   <Button
                     buttonText="Not a clue."
+                    cardId={214}
                     lable="Yikes, I need extra review on that one! Better add a duplicate!"
                     type="wrongAnswerBtn"
                   />,
@@ -353,9 +393,9 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "buttonText": "Nailed it!",
-                    "cardId": undefined,
+                    "cardId": 214,
                     "lable": "Remove this flashcard, this one is memorized!",
-                    "removeFromDeck": undefined,
+                    "removeFromDeck": [MockFunction],
                     "type": "removeBtn",
                   },
                   "ref": null,
@@ -381,7 +421,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "buttonText": "Not a clue.",
-                    "cardId": undefined,
+                    "cardId": 214,
                     "lable": "Yikes, I need extra review on that one! Better add a duplicate!",
                     "type": "wrongAnswerBtn",
                   },

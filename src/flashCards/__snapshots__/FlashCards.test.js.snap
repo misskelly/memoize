@@ -60,6 +60,7 @@ ShallowWrapper {
       "children": <Card
         cardId={214}
         definition="Simulates an event on an element by passing the event name string in as an argument."
+        getRandomCard={[MockFunction]}
         removeFromDeck={[MockFunction]}
         term=".simulate()"
       />,
@@ -73,6 +74,7 @@ ShallowWrapper {
       "props": Object {
         "cardId": 214,
         "definition": "Simulates an event on an element by passing the event name string in as an argument.",
+        "getRandomCard": [MockFunction],
         "removeFromDeck": [MockFunction],
         "term": ".simulate()",
       },
@@ -91,6 +93,7 @@ ShallowWrapper {
         "children": <Card
           cardId={214}
           definition="Simulates an event on an element by passing the event name string in as an argument."
+          getRandomCard={[MockFunction]}
           removeFromDeck={[MockFunction]}
           term=".simulate()"
         />,
@@ -104,6 +107,7 @@ ShallowWrapper {
         "props": Object {
           "cardId": 214,
           "definition": "Simulates an event on an element by passing the event name string in as an argument.",
+          "getRandomCard": [MockFunction],
           "removeFromDeck": [MockFunction],
           "term": ".simulate()",
         },
