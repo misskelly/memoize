@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam:300,700|La+Belle+Aurore|Patrick+Hand+SC|Walter+Turncoat');
+
+
+
+// FONTS
+$primary-font: 'Patrick Hand SC',
+cursive;
+$term-font: 'Walter Turncoat',
+cursive;
+$cursive-font: 'La Belle Aurore',
+cursive;
+$secondary-font: 'Kalam',
+cursive;
+
+
+// STYLES
+$temp-border: 3px dashed hsl(0, 0%, 0%);
+$corners: .25rem;
+
+// COLORS
+$card-bkgrnd: hsl(0, 0%, 94%);
+$card-stripe-red: hsl(354, 50%, 46%);
+$almost-color: hsl(43, 99%, 42%);
+$nailed-it-color: hsl(138, 45%, 32%);

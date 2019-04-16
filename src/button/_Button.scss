@@ -1,0 +1,37 @@
+// _Button.scss
+
+.cardBtnWrapper {
+  display: flex;
+  flex-direction: column;
+  // margin: 0 1rem 1rem 0;
+}
+
+.btnLabel {
+  font-family: $cursive-font;
+  line-height: 1;
+  padding: 1rem 0;
+}
+
+.cardBtn {
+  cursor: pointer;
+  border-radius: $corners;
+  background: transparent;
+  border: 0;
+  font-family: $secondary-font;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: .5rem;
+}
+
+#wrongAnswerBtn {
+  color: $card-stripe-red;
+}
+
+#almostBtn {
+  color: $almost-color;
+}
+
+#removeBtn {
+  color: $nailed-it-color;
+}
