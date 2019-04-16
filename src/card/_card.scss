@@ -2,29 +2,61 @@
 
 
 .featuredCard {
-  width: 40%;
+  width: 50%;
+  min-width: 450px;
+  margin: 2rem;
 }
+
 // TERM SIDE
 
-.termSide {
+.card {
+  height: 18rem;
   text-align: center;
   border: $temp-border;
+  background: $card-bkgrnd;
 }
 
 .termText {
   font-family: $term-font;
-  font-size: 3rem; 
+  font-size: 3rem;
 }
 
 .iconBtnWrapper {
   display: flex;
   justify-content: space-between;
+  height: 5rem;
 }
 
 .icon {
-  border: $temp-border;
-  width: 4rem;
-  height: 4rem;
+  width: 12%;
+  margin: .5rem;
+  padding: 5px;
+  border-radius: .25rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $card-bkgrnd;
+  }
 }
 
 // DEFINITION SIDE
+
+.definitionSide {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  background: center / contain no-repeat url(Styles/notecard.jpg);
+
+}
+
+.definitionText {
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-family: $term-font
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  margin: 0 1rem;
+}

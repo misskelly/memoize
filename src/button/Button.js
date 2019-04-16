@@ -12,7 +12,7 @@ export default class Button extends Component {
   }
   render() {
     return (
-      <>
+      <div className='cardBtnWrapper'>
         <button className='cardBtn' 
                 id={this.props.type}
                 onClick={this.handleClick}>
@@ -20,9 +20,9 @@ export default class Button extends Component {
         </button>
         <label  htmlFor={this.props.type} 
                 className='btnLabel'>
-          {this.props.lable}
+          {this.props.label}
         </label>
-      </>
+      </div>
     )
   }
 

@@ -19,7 +19,7 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
       "children": Array [
         <button
@@ -30,6 +30,7 @@ ShallowWrapper {
           className="btnLabel"
         />,
       ],
+      "className": "cardBtnWrapper",
     },
     "ref": null,
     "rendered": Array [
@@ -61,13 +62,13 @@ ShallowWrapper {
         "type": "label",
       },
     ],
-    "type": Symbol(react.fragment),
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
         "children": Array [
           <button
@@ -78,6 +79,7 @@ ShallowWrapper {
             className="btnLabel"
           />,
         ],
+        "className": "cardBtnWrapper",
       },
       "ref": null,
       "rendered": Array [
@@ -109,7 +111,7 @@ ShallowWrapper {
           "type": "label",
         },
       ],
-      "type": Symbol(react.fragment),
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
