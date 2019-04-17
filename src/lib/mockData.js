@@ -26,8 +26,8 @@ const mockCards = [
 ]
 
 const mockCurrentCard = {
-  "categoryId": 2,
-  "cardNumber": 214,
+  "categoryId": 1,
+  "cardNumber": 103,
   "term": ".simulate()",
   "definition": "Simulates an event on an element by passing the event name string in as an argument."
 }

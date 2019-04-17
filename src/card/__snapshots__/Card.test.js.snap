@@ -4,7 +4,7 @@ exports[`Card should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Card
-    cardId={214}
+    cardId={103}
     definition="Simulates an event on an element by passing the event name string in as an argument."
     getRandomCard={[MockFunction]}
     removeFromDeck={[MockFunction]}
@@ -63,7 +63,7 @@ ShallowWrapper {
           >
             <Button
               buttonText="Nailed it!"
-              cardId={214}
+              cardId={103}
               getRandomCard={[MockFunction]}
               label="Remove this one, I've got it memorized!"
               removeFromDeck={[MockFunction]}
@@ -77,7 +77,7 @@ ShallowWrapper {
             />
             <Button
               buttonText="Not a clue."
-              cardId={214}
+              cardId={103}
               getRandomCard={[MockFunction]}
               label="Yikes, I need extra review on that one!"
               type="wrongAnswerBtn"
@@ -86,7 +86,7 @@ ShallowWrapper {
         </article>,
       ],
       "className": "featuredCard",
-      "id": 214,
+      "id": 103,
     },
     "ref": null,
     "rendered": Array [
@@ -207,7 +207,7 @@ ShallowWrapper {
             >
               <Button
                 buttonText="Nailed it!"
-                cardId={214}
+                cardId={103}
                 getRandomCard={[MockFunction]}
                 label="Remove this one, I've got it memorized!"
                 removeFromDeck={[MockFunction]}
@@ -221,7 +221,7 @@ ShallowWrapper {
               />
               <Button
                 buttonText="Not a clue."
-                cardId={214}
+                cardId={103}
                 getRandomCard={[MockFunction]}
                 label="Yikes, I need extra review on that one!"
                 type="wrongAnswerBtn"
@@ -252,7 +252,7 @@ ShallowWrapper {
               "children": Array [
                 <Button
                   buttonText="Nailed it!"
-                  cardId={214}
+                  cardId={103}
                   getRandomCard={[MockFunction]}
                   label="Remove this one, I've got it memorized!"
                   removeFromDeck={[MockFunction]}
@@ -266,7 +266,7 @@ ShallowWrapper {
                 />,
                 <Button
                   buttonText="Not a clue."
-                  cardId={214}
+                  cardId={103}
                   getRandomCard={[MockFunction]}
                   label="Yikes, I need extra review on that one!"
                   type="wrongAnswerBtn"
@@ -282,7 +282,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "buttonText": "Nailed it!",
-                  "cardId": 214,
+                  "cardId": 103,
                   "getRandomCard": [MockFunction],
                   "label": "Remove this one, I've got it memorized!",
                   "removeFromDeck": [MockFunction],
@@ -312,7 +312,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "buttonText": "Not a clue.",
-                  "cardId": 214,
+                  "cardId": 103,
                   "getRandomCard": [MockFunction],
                   "label": "Yikes, I need extra review on that one!",
                   "type": "wrongAnswerBtn",
@@ -375,7 +375,7 @@ ShallowWrapper {
             >
               <Button
                 buttonText="Nailed it!"
-                cardId={214}
+                cardId={103}
                 getRandomCard={[MockFunction]}
                 label="Remove this one, I've got it memorized!"
                 removeFromDeck={[MockFunction]}
@@ -389,7 +389,7 @@ ShallowWrapper {
               />
               <Button
                 buttonText="Not a clue."
-                cardId={214}
+                cardId={103}
                 getRandomCard={[MockFunction]}
                 label="Yikes, I need extra review on that one!"
                 type="wrongAnswerBtn"
@@ -398,7 +398,7 @@ ShallowWrapper {
           </article>,
         ],
         "className": "featuredCard",
-        "id": 214,
+        "id": 103,
       },
       "ref": null,
       "rendered": Array [
@@ -519,7 +519,7 @@ ShallowWrapper {
               >
                 <Button
                   buttonText="Nailed it!"
-                  cardId={214}
+                  cardId={103}
                   getRandomCard={[MockFunction]}
                   label="Remove this one, I've got it memorized!"
                   removeFromDeck={[MockFunction]}
@@ -533,7 +533,7 @@ ShallowWrapper {
                 />
                 <Button
                   buttonText="Not a clue."
-                  cardId={214}
+                  cardId={103}
                   getRandomCard={[MockFunction]}
                   label="Yikes, I need extra review on that one!"
                   type="wrongAnswerBtn"
@@ -564,7 +564,7 @@ ShallowWrapper {
                 "children": Array [
                   <Button
                     buttonText="Nailed it!"
-                    cardId={214}
+                    cardId={103}
                     getRandomCard={[MockFunction]}
                     label="Remove this one, I've got it memorized!"
                     removeFromDeck={[MockFunction]}
@@ -578,7 +578,7 @@ ShallowWrapper {
                   />,
                   <Button
                     buttonText="Not a clue."
-                    cardId={214}
+                    cardId={103}
                     getRandomCard={[MockFunction]}
                     label="Yikes, I need extra review on that one!"
                     type="wrongAnswerBtn"
@@ -594,7 +594,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "buttonText": "Nailed it!",
-                    "cardId": 214,
+                    "cardId": 103,
                     "getRandomCard": [MockFunction],
                     "label": "Remove this one, I've got it memorized!",
                     "removeFromDeck": [MockFunction],
@@ -624,7 +624,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "buttonText": "Not a clue.",
-                    "cardId": 214,
+                    "cardId": 103,
                     "getRandomCard": [MockFunction],
                     "label": "Yikes, I need extra review on that one!",
                     "type": "wrongAnswerBtn",

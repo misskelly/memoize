@@ -1,6 +1,6 @@
 import React from 'react';
 import { flashCards, catergories } from './api'
-import { mockCards, mockCurrentCard } from './mockData/mockData'
+import { mockCards, mockCurrentCard } from './lib/mockData'
 
 import App from './App';
 import { shallow } from 'enzyme';

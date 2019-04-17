@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './Card';
-import { mockCurrentCard } from '../mockData/mockData'
+import { mockCurrentCard } from '../lib/mockData'
 import { shallow } from 'enzyme';
 
 

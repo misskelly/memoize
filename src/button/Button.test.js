@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './Button';
-import { mockCurrentCard } from '../mockData/mockData'
+import { mockCurrentCard } from '../lib/mockData'
 import { shallow } from 'enzyme';
 
 const mockRemoveFromDeck = jest.fn();
@@ -23,3 +23,11 @@ describe('Button', () => {
   });
 
 });
+
+
+//  it("should call toggle function when button is clicked", () => {
+//  wrapper.find("button").simulate("click");
+//  expect(mockToggleCard).toHaveBeenCalled();
+//  });
+
+
