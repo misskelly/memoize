@@ -1,6 +1,6 @@
 import React from 'react';
 import FlashCards from './FlashCards';
-import { mockCards, mockCurrentCard } from '../mockData/mockData'
+import { mockCards, mockCurrentCard } from '../lib/mockData'
 import { shallow } from 'enzyme';
 
 const mockRemoveFromDeck = jest.fn();

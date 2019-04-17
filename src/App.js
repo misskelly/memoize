@@ -10,6 +10,7 @@ export default class App extends Component {
     super();
     this.state = {
       allCards: flashCards,
+      currentDeck: [],
       currentCard: flashCards[0]
     }
     this.removeFromDeck = this.removeFromDeck.bind(this);
@@ -18,7 +19,7 @@ export default class App extends Component {
 
   updateDeck = (newDeck) => {
     this.setState({
-      allCards: newDeck
+      currentDeck: newDeck
     })
   }
 
@@ -52,25 +53,25 @@ export default class App extends Component {
   // }
 
   removeFromDeck = (id) => {
-    const { allCards } = this.state
-    const updatedDeck = removeCard(id, allCards)
+    const { currentDeck } = this.state
+    const updatedDeck = removeCard(id, currentDeck)
     this.updateDeck(updatedDeck)
   }
 
   getRandomCard = () => {
-    const randomNum = Math.floor(Math.random() * this.state.allCards.length);
-    this.updateCurrentCard(this.state.allCards[randomNum])
+    const randomNum = Math.floor(Math.random() * this.state.currentDeck.length);
+    this.updateCurrentCard(this.state.currentDeck[randomNum])
   }
     
   render () {
-    console.log(this.state.allCards.length)
+    const { allCards, currentDeck, currentCard } = this.state;
     return (
       <main className='appContainer'>
-        {/* <Header /> */}
-        {/* <Menu /> */}
-        <FlashCards deck={this.state.allCards}
-                    card={this.state.currentCard}
-                    getRandomCard={this.state.getRandomCard}
+        <Header />
+        <Menu allCards={allCards}/>
+        <FlashCards deck={currentDeck}
+                    card={currentCard}
+                    getRandomCard={this.getRandomCard}
                     removeFromDeck={this.removeFromDeck}
                   />
       </main>

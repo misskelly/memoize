@@ -6,8 +6,8 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <FlashCards
     card={
       Object {
-        "cardNumber": 214,
-        "categoryId": 2,
+        "cardNumber": 103,
+        "categoryId": 1,
         "definition": "Simulates an event on an element by passing the event name string in as an argument.",
         "term": ".simulate()",
       }
@@ -58,7 +58,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <Card
-        cardId={214}
+        cardId={103}
         definition="Simulates an event on an element by passing the event name string in as an argument."
         getRandomCard={[MockFunction]}
         removeFromDeck={[MockFunction]}
@@ -72,7 +72,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "cardId": 214,
+        "cardId": 103,
         "definition": "Simulates an event on an element by passing the event name string in as an argument.",
         "getRandomCard": [MockFunction],
         "removeFromDeck": [MockFunction],
@@ -91,7 +91,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <Card
-          cardId={214}
+          cardId={103}
           definition="Simulates an event on an element by passing the event name string in as an argument."
           getRandomCard={[MockFunction]}
           removeFromDeck={[MockFunction]}
@@ -105,7 +105,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "cardId": 214,
+          "cardId": 103,
           "definition": "Simulates an event on an element by passing the event name string in as an argument.",
           "getRandomCard": [MockFunction],
           "removeFromDeck": [MockFunction],
