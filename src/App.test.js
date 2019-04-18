@@ -6,12 +6,15 @@ import App from './App';
 import { shallow } from 'enzyme';
 
 
-const mockRandomNumber = jest.fn();
-const mockRemoveFromDeck = jest.fn();
-const mockGetRandomCard = jest.fn();
 
 describe('App', () => {
+
+  const mockRandomNumber = jest.fn();
+  const mockRemoveFromDeck = jest.fn();
+  const mockGetRandomCard = jest.fn();
+  
   let wrapper;
+
   beforeEach(() => {
     wrapper = shallow(
       <App />

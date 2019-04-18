@@ -68,7 +68,8 @@ export default class App extends Component {
     return (
       <main className='appContainer'>
         <Header />
-        <Menu allCards={allCards}/>
+        <Menu allCards={allCards}
+              updateDeck={this.updateDeck}/>
         <FlashCards deck={currentDeck}
                     card={currentCard}
                     getRandomCard={this.getRandomCard}

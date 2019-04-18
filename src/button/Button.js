@@ -3,24 +3,36 @@ import React, {Component} from 'react';
 export default class Button extends Component {
 
   handleClick = (e) => {
-    if (e.target.id === 'removeBtn') {
-      this.props.removeFromDeck(this.props.cardId)
-    } 
-    // else if (e.target.id === 'wrongAnswerBtn'){
-    // }
-    this.props.getRandomCard();
+    const { selectDeck, removeFromDeck, getRandomCard, updateDeck, allCards, cardId } = this.props;
+    
+    switch (e.target.id) {
+      case 'basicsDeckBtn':
+        selectDeck('basics');
+        break;
+      case 'testingDeckBtn':
+        selectDeck('testing');
+        break;
+      case 'removeBtn':
+        removeFromDeck(cardId);
+        break
+      default:
+        updateDeck(allCards)
+      }
+      
+    getRandomCard();
   }
   render() {
+    const { type, buttonText, label } = this.props;
     return (
       <div className='cardBtnWrapper'>
         <button className='cardBtn' 
-                id={this.props.type}
+                id={type}
                 onClick={this.handleClick}>
-          {this.props.buttonText}
+          {buttonText}
         </button>
-        <label  htmlFor={this.props.type} 
+        <label  htmlFor={type} 
                 className='btnLabel'>
-          {this.props.label}
+          {label}
         </label>
       </div>
     )

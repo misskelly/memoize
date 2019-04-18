@@ -1,50 +1,86 @@
 import React, { Component } from 'react';
-import Button from '../button/Button'
+import Button from '../button/Button';
+import { filterDeck } from '../lib/utils';
+
+
 
 export default class Menu extends Component {
   constructor(props) {
     super(props);
     this.state = {
       student: 'Friend',
-      selectedDeck: props.allCards
     }
+    this.selectDeck = this.selectDeck.bind(this);
   }
 
-
-  //  TODO : update student method
-  updateStudent = (name) => {
-  this.setState({
-    student: name
-  })
+  updateStudent = (e) => {
+    let name = e.target.value;
+    this.setState({
+      student: name
+    })
   } 
-
-  //handleNameInput
-
+  
+  selectDeck = (chosenDeck) => {
+    const { allCards, updateDeck } = this.props;
+    const updatedDeck = filterDeck(chosenDeck, allCards);
+    updateDeck(updatedDeck);
+  }
+  
+  handleSubmit = (e) => {
+    const { student } = this.state;
+    e.preventDefault();
+    console.log(this.state)
+    const greeting = document.querySelector('.greetingHeading');
+    const input = document.querySelector('.nameInput');
+    greeting.innerText = `Hello ${student}!`;
+    input.value = '';
+  }
+  
+  //  TODO : update student method
+  
   render () {
-    const { allCards } = this.props;
-    const { student, selectedDeck } = this.state;
+    const { allCards, updateDeck } = this.props;
     return (
       <section className='mainMenu'>
-        <form className='menuForm'>
+        <h3 className='greetingHeading'>Hello Friend!</h3>
+        <form className='menuForm' onSubmit={this.handleSubmit}>
           <label  className='nameInputLabel'
                   htmlFor='nameInput'>
-                  Student
+                  Student Name
           </label>
           <input  type='text'
                   id='nameInput'
                   className='nameInput' placeholder='Your name here.....'
-                  onChange='handleNameInput'/>
-          <h3 className='chooseDeckHeading'>
-            Which terms would you like to review?
-          </h3>
-
-          <Button type='reactDeckBtn'
-            buttonText='React Basics'
-            label=''/>
-          
-                
+                  onChange={this.updateStudent}/>
+          <button type='submit' 
+                  className='updateNameButton'
+                  autoComplete = "fname" 
+                  autoFocus>
                   
+          </button>
+          <h4 className='chooseDeckHeading'>
+            Which terms would you like to review?
+          </h4>
 
+          <Button type='basicsDeckBtn'
+                  buttonText='React Basics'
+                  label=''
+                  selectDeck={this.selectDeck}/>
+          <Button type='testingDeckBtn'
+                  buttonText='React Testing'
+                  label=''
+                  selectDeck={this.selectDeck}/>
+          <Button type='previousDeck'
+                  buttonText='Keep Going'
+                  label=''
+// TODO: local Storage!!!!                  
+                  // selectDeck={storedDeck}
+                  />
+          <Button type='fullDeck'
+                  buttonText='Everything'
+                  label=''
+                  allTerms={updateDeck}
+                  allCards={allCards}/>
 
         </form>
       

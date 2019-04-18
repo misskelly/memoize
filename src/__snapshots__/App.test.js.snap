@@ -211,6 +211,7 @@ ShallowWrapper {
               },
             ]
           }
+          updateDeck={[Function]}
         />,
         <FlashCards
           card={
@@ -432,6 +433,7 @@ ShallowWrapper {
               "term": ".simulate()",
             },
           ],
+          "updateDeck": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -658,6 +660,7 @@ ShallowWrapper {
                 },
               ]
             }
+            updateDeck={[Function]}
           />,
           <FlashCards
             card={
@@ -879,6 +882,7 @@ ShallowWrapper {
                 "term": ".simulate()",
               },
             ],
+            "updateDeck": [Function],
           },
           "ref": null,
           "rendered": null,

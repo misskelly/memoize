@@ -3,7 +3,37 @@
 exports[`Menu should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Menu />,
+  Symbol(enzyme.__unrendered__): <Menu
+    allCards={
+      Array [
+        Object {
+          "cardNumber": 101,
+          "categoryId": 1,
+          "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
+          "term": "React",
+        },
+        Object {
+          "cardNumber": 102,
+          "categoryId": 1,
+          "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
+          "term": "The Virtual DOM",
+        },
+        Object {
+          "cardNumber": 103,
+          "categoryId": 1,
+          "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
+          "term": "JSX",
+        },
+        Object {
+          "cardNumber": 205,
+          "categoryId": 2,
+          "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
+          "term": "Enzyme",
+        },
+      ]
+    }
+    updateDeck={[Function]}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -18,165 +48,110 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <form
-        className="menuForm"
-      >
-        <label
-          className="nameInputLabel"
-          htmlFor="nameInput"
-        >
-          Student
-        </label>
-        <input
-          className="nameInput"
-          id="nameInput"
-          onChange="handleNameInput"
-          placeholder="Your name here....."
-          type="text"
-        />
+      "children": Array [
         <h3
-          className="chooseDeckHeading"
+          className="greetingHeading"
         >
-          Which terms would you like to review?
-        </h3>
-        <Button
-          buttonText="React Basics"
-          label=""
-          type="reactDeckBtn"
-        />
-      </form>,
-      "className": "mainMenu",
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <label
-            className="nameInputLabel"
-            htmlFor="nameInput"
-          >
-            Student
-          </label>,
-          <input
-            className="nameInput"
-            id="nameInput"
-            onChange="handleNameInput"
-            placeholder="Your name here....."
-            type="text"
-          />,
-          <h3
-            className="chooseDeckHeading"
-          >
-            Which terms would you like to review?
-          </h3>,
-          <Button
-            buttonText="React Basics"
-            label=""
-            type="reactDeckBtn"
-          />,
-        ],
-        "className": "menuForm",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Student",
-            "className": "nameInputLabel",
-            "htmlFor": "nameInput",
-          },
-          "ref": null,
-          "rendered": "Student",
-          "type": "label",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "className": "nameInput",
-            "id": "nameInput",
-            "onChange": "handleNameInput",
-            "placeholder": "Your name here.....",
-            "type": "text",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "input",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Which terms would you like to review?",
-            "className": "chooseDeckHeading",
-          },
-          "ref": null,
-          "rendered": "Which terms would you like to review?",
-          "type": "h3",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "buttonText": "React Basics",
-            "label": "",
-            "type": "reactDeckBtn",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": "form",
-    },
-    "type": "section",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <form
+          Hello Friend!
+        </h3>,
+        <form
           className="menuForm"
+          onSubmit={[Function]}
         >
           <label
             className="nameInputLabel"
             htmlFor="nameInput"
           >
-            Student
+            Student Name
           </label>
           <input
             className="nameInput"
             id="nameInput"
-            onChange="handleNameInput"
+            onChange={[Function]}
             placeholder="Your name here....."
             type="text"
           />
-          <h3
+          <button
+            autoComplete="fname"
+            autoFocus={true}
+            className="updateNameButton"
+            type="submit"
+          />
+          <h4
             className="chooseDeckHeading"
           >
             Which terms would you like to review?
-          </h3>
+          </h4>
           <Button
             buttonText="React Basics"
             label=""
-            type="reactDeckBtn"
+            selectDeck={[Function]}
+            type="basicsDeckBtn"
+          />
+          <Button
+            buttonText="React Testing"
+            label=""
+            selectDeck={[Function]}
+            type="testingDeckBtn"
+          />
+          <Button
+            buttonText="Keep Going"
+            label=""
+            type="previousDeck"
+          />
+          <Button
+            allCards={
+              Array [
+                Object {
+                  "cardNumber": 101,
+                  "categoryId": 1,
+                  "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
+                  "term": "React",
+                },
+                Object {
+                  "cardNumber": 102,
+                  "categoryId": 1,
+                  "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
+                  "term": "The Virtual DOM",
+                },
+                Object {
+                  "cardNumber": 103,
+                  "categoryId": 1,
+                  "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
+                  "term": "JSX",
+                },
+                Object {
+                  "cardNumber": 205,
+                  "categoryId": 2,
+                  "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
+                  "term": "Enzyme",
+                },
+              ]
+            }
+            allTerms={[Function]}
+            buttonText="Everything"
+            label=""
+            type="fullDeck"
           />
         </form>,
-        "className": "mainMenu",
+      ],
+      "className": "mainMenu",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Hello Friend!",
+          "className": "greetingHeading",
+        },
+        "ref": null,
+        "rendered": "Hello Friend!",
+        "type": "h3",
       },
-      "ref": null,
-      "rendered": Object {
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
@@ -186,27 +161,80 @@ ShallowWrapper {
               className="nameInputLabel"
               htmlFor="nameInput"
             >
-              Student
+              Student Name
             </label>,
             <input
               className="nameInput"
               id="nameInput"
-              onChange="handleNameInput"
+              onChange={[Function]}
               placeholder="Your name here....."
               type="text"
             />,
-            <h3
+            <button
+              autoComplete="fname"
+              autoFocus={true}
+              className="updateNameButton"
+              type="submit"
+            />,
+            <h4
               className="chooseDeckHeading"
             >
               Which terms would you like to review?
-            </h3>,
+            </h4>,
             <Button
               buttonText="React Basics"
               label=""
-              type="reactDeckBtn"
+              selectDeck={[Function]}
+              type="basicsDeckBtn"
+            />,
+            <Button
+              buttonText="React Testing"
+              label=""
+              selectDeck={[Function]}
+              type="testingDeckBtn"
+            />,
+            <Button
+              buttonText="Keep Going"
+              label=""
+              type="previousDeck"
+            />,
+            <Button
+              allCards={
+                Array [
+                  Object {
+                    "cardNumber": 101,
+                    "categoryId": 1,
+                    "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
+                    "term": "React",
+                  },
+                  Object {
+                    "cardNumber": 102,
+                    "categoryId": 1,
+                    "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
+                    "term": "The Virtual DOM",
+                  },
+                  Object {
+                    "cardNumber": 103,
+                    "categoryId": 1,
+                    "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
+                    "term": "JSX",
+                  },
+                  Object {
+                    "cardNumber": 205,
+                    "categoryId": 2,
+                    "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
+                    "term": "Enzyme",
+                  },
+                ]
+              }
+              allTerms={[Function]}
+              buttonText="Everything"
+              label=""
+              type="fullDeck"
             />,
           ],
           "className": "menuForm",
+          "onSubmit": [Function],
         },
         "ref": null,
         "rendered": Array [
@@ -215,12 +243,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Student",
+              "children": "Student Name",
               "className": "nameInputLabel",
               "htmlFor": "nameInput",
             },
             "ref": null,
-            "rendered": "Student",
+            "rendered": "Student Name",
             "type": "label",
           },
           Object {
@@ -230,7 +258,7 @@ ShallowWrapper {
             "props": Object {
               "className": "nameInput",
               "id": "nameInput",
-              "onChange": "handleNameInput",
+              "onChange": [Function],
               "placeholder": "Your name here.....",
               "type": "text",
             },
@@ -243,12 +271,26 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
+              "autoComplete": "fname",
+              "autoFocus": true,
+              "className": "updateNameButton",
+              "type": "submit",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
               "children": "Which terms would you like to review?",
               "className": "chooseDeckHeading",
             },
             "ref": null,
             "rendered": "Which terms would you like to review?",
-            "type": "h3",
+            "type": "h4",
           },
           Object {
             "instance": null,
@@ -257,7 +299,75 @@ ShallowWrapper {
             "props": Object {
               "buttonText": "React Basics",
               "label": "",
-              "type": "reactDeckBtn",
+              "selectDeck": [Function],
+              "type": "basicsDeckBtn",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "buttonText": "React Testing",
+              "label": "",
+              "selectDeck": [Function],
+              "type": "testingDeckBtn",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "buttonText": "Keep Going",
+              "label": "",
+              "type": "previousDeck",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "allCards": Array [
+                Object {
+                  "cardNumber": 101,
+                  "categoryId": 1,
+                  "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
+                  "term": "React",
+                },
+                Object {
+                  "cardNumber": 102,
+                  "categoryId": 1,
+                  "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
+                  "term": "The Virtual DOM",
+                },
+                Object {
+                  "cardNumber": 103,
+                  "categoryId": 1,
+                  "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
+                  "term": "JSX",
+                },
+                Object {
+                  "cardNumber": 205,
+                  "categoryId": 2,
+                  "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
+                  "term": "Enzyme",
+                },
+              ],
+              "allTerms": [Function],
+              "buttonText": "Everything",
+              "label": "",
+              "type": "fullDeck",
             },
             "ref": null,
             "rendered": null,
@@ -266,6 +376,344 @@ ShallowWrapper {
         ],
         "type": "form",
       },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3
+            className="greetingHeading"
+          >
+            Hello Friend!
+          </h3>,
+          <form
+            className="menuForm"
+            onSubmit={[Function]}
+          >
+            <label
+              className="nameInputLabel"
+              htmlFor="nameInput"
+            >
+              Student Name
+            </label>
+            <input
+              className="nameInput"
+              id="nameInput"
+              onChange={[Function]}
+              placeholder="Your name here....."
+              type="text"
+            />
+            <button
+              autoComplete="fname"
+              autoFocus={true}
+              className="updateNameButton"
+              type="submit"
+            />
+            <h4
+              className="chooseDeckHeading"
+            >
+              Which terms would you like to review?
+            </h4>
+            <Button
+              buttonText="React Basics"
+              label=""
+              selectDeck={[Function]}
+              type="basicsDeckBtn"
+            />
+            <Button
+              buttonText="React Testing"
+              label=""
+              selectDeck={[Function]}
+              type="testingDeckBtn"
+            />
+            <Button
+              buttonText="Keep Going"
+              label=""
+              type="previousDeck"
+            />
+            <Button
+              allCards={
+                Array [
+                  Object {
+                    "cardNumber": 101,
+                    "categoryId": 1,
+                    "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
+                    "term": "React",
+                  },
+                  Object {
+                    "cardNumber": 102,
+                    "categoryId": 1,
+                    "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
+                    "term": "The Virtual DOM",
+                  },
+                  Object {
+                    "cardNumber": 103,
+                    "categoryId": 1,
+                    "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
+                    "term": "JSX",
+                  },
+                  Object {
+                    "cardNumber": 205,
+                    "categoryId": 2,
+                    "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
+                    "term": "Enzyme",
+                  },
+                ]
+              }
+              allTerms={[Function]}
+              buttonText="Everything"
+              label=""
+              type="fullDeck"
+            />
+          </form>,
+        ],
+        "className": "mainMenu",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Hello Friend!",
+            "className": "greetingHeading",
+          },
+          "ref": null,
+          "rendered": "Hello Friend!",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                className="nameInputLabel"
+                htmlFor="nameInput"
+              >
+                Student Name
+              </label>,
+              <input
+                className="nameInput"
+                id="nameInput"
+                onChange={[Function]}
+                placeholder="Your name here....."
+                type="text"
+              />,
+              <button
+                autoComplete="fname"
+                autoFocus={true}
+                className="updateNameButton"
+                type="submit"
+              />,
+              <h4
+                className="chooseDeckHeading"
+              >
+                Which terms would you like to review?
+              </h4>,
+              <Button
+                buttonText="React Basics"
+                label=""
+                selectDeck={[Function]}
+                type="basicsDeckBtn"
+              />,
+              <Button
+                buttonText="React Testing"
+                label=""
+                selectDeck={[Function]}
+                type="testingDeckBtn"
+              />,
+              <Button
+                buttonText="Keep Going"
+                label=""
+                type="previousDeck"
+              />,
+              <Button
+                allCards={
+                  Array [
+                    Object {
+                      "cardNumber": 101,
+                      "categoryId": 1,
+                      "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
+                      "term": "React",
+                    },
+                    Object {
+                      "cardNumber": 102,
+                      "categoryId": 1,
+                      "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
+                      "term": "The Virtual DOM",
+                    },
+                    Object {
+                      "cardNumber": 103,
+                      "categoryId": 1,
+                      "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
+                      "term": "JSX",
+                    },
+                    Object {
+                      "cardNumber": 205,
+                      "categoryId": 2,
+                      "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
+                      "term": "Enzyme",
+                    },
+                  ]
+                }
+                allTerms={[Function]}
+                buttonText="Everything"
+                label=""
+                type="fullDeck"
+              />,
+            ],
+            "className": "menuForm",
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Student Name",
+                "className": "nameInputLabel",
+                "htmlFor": "nameInput",
+              },
+              "ref": null,
+              "rendered": "Student Name",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "nameInput",
+                "id": "nameInput",
+                "onChange": [Function],
+                "placeholder": "Your name here.....",
+                "type": "text",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "autoComplete": "fname",
+                "autoFocus": true,
+                "className": "updateNameButton",
+                "type": "submit",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Which terms would you like to review?",
+                "className": "chooseDeckHeading",
+              },
+              "ref": null,
+              "rendered": "Which terms would you like to review?",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "buttonText": "React Basics",
+                "label": "",
+                "selectDeck": [Function],
+                "type": "basicsDeckBtn",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "buttonText": "React Testing",
+                "label": "",
+                "selectDeck": [Function],
+                "type": "testingDeckBtn",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "buttonText": "Keep Going",
+                "label": "",
+                "type": "previousDeck",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "allCards": Array [
+                  Object {
+                    "cardNumber": 101,
+                    "categoryId": 1,
+                    "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
+                    "term": "React",
+                  },
+                  Object {
+                    "cardNumber": 102,
+                    "categoryId": 1,
+                    "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
+                    "term": "The Virtual DOM",
+                  },
+                  Object {
+                    "cardNumber": 103,
+                    "categoryId": 1,
+                    "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
+                    "term": "JSX",
+                  },
+                  Object {
+                    "cardNumber": 205,
+                    "categoryId": 2,
+                    "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
+                    "term": "Enzyme",
+                  },
+                ],
+                "allTerms": [Function],
+                "buttonText": "Everything",
+                "label": "",
+                "type": "fullDeck",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "form",
+        },
+      ],
       "type": "section",
     },
   ],
