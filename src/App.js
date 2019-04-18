@@ -19,42 +19,28 @@ export default class App extends Component {
 
   
   componentDidMount() {
-    this.fetchData();
-    console.log(this.state)
-    let deck = localStorage.getItem("savedDeck") === null ? 
-    this.state.allCards : 
-    JSON.parse(localStorage.getItem('savedDeck'));
-    console.log('deck: ', deck)
-    this.updateDeck(deck)
-    this.getRandomCard();
-  }
-  
-  fetchData() {
     fetch('https://fe-apps.herokuapp.com/api/v1/memoize/1901/kzickmemoizedata/flashcards')
     .then(data => data.json())
-    .then(data => this.setState({
-      allCards: data.flashCards
+    .then(data => this.setState({allCards: data.flashCards}, () => {
+      this.getDeck();
     }))
     .catch(err => console.log(err));
-    console.log(this.state);
   }
 
-  componentWillUpdate(nextState) {
-    localStorage.setItem('savedDeck', JSON.stringify(nextState.currentDeck));
+  getDeck = () => {
+    let deck = JSON.parse(localStorage.getItem('savedDeck')) || this.state.allCards;
+    this.updateDeck(deck);
   }
 
   updateDeck = (newDeck) => {
-    this.setState({
-      currentDeck: newDeck
-    })
-    console.log('deck state: ', this.state.currentDeck)
+    this.setState({currentDeck: newDeck}, () => {
+      console.log(this.state.allCards, this.state.currentDeck)
+    });
   }
 
   updateCurrentCard = (newCard) => {
-    this.setState({
-      currentCard: newCard
-    });
-    console.log('current card called', this.state.currentCard)
+    this.setState({currentCard: newCard}, () => console.log(this.state.currentCard));
+    
   }
   
   removeFromDeck = (id) => {
@@ -79,12 +65,12 @@ export default class App extends Component {
         <Menu allCards={allCards}
               getRandomCard={this.getRandomCard}
               updateDeck={this.updateDeck}/>
-        {this.props.currentCard !== null &&
+        {currentDeck.length &&
         <FlashCards deck={currentDeck}
                     card={currentCard}
                     getRandomCard={this.getRandomCard}
                     removeFromDeck={this.removeFromDeck}
-                  />}
+        /> }
       </main>
     );
   }
