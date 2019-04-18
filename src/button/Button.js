@@ -3,7 +3,8 @@ import React, {Component} from 'react';
 export default class Button extends Component {
 
   handleClick = (e) => {
-    const { selectDeck, removeFromDeck, getRandomCard, allTerms, allCards, cardId } = this.props;
+    e.preventDefault();
+    const { selectDeck, removeFromDeck, updateDeck, deck, getRandomCard, allTerms, allCards, cardId } = this.props;
     
     switch (e.target.id) {
       case 'basicsDeckBtn':
@@ -12,11 +13,25 @@ export default class Button extends Component {
       case 'testingDeckBtn':
         selectDeck('testing');
         break;
+      case 'previousDeck':
+        console.log('You need to hook up local storage here')
+        break
+      case 'fullDeck':
+        allTerms(allCards);
+        break
       case 'removeBtn':
         removeFromDeck(cardId);
         break
+      case 'almostBtn':
+        updateDeck(deck)
+        console.log('So close');
+        break
+        case 'wrongAnswerBtn':
+        updateDeck(deck)
+        console.log('Whomp whomp.  Also you should add that duplicate card functionality here....');
+        break
       default:
-        allTerms(allCards)
+        console.log('Uh Oh, we have a button problem....')
       }
     getRandomCard();
   }

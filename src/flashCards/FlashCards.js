@@ -2,18 +2,22 @@ import React from 'react';
 import Card from '../card/Card'
 
 export default function FlashCards (props) {
-  console.log(props)
+  const { getRandomCard, removeFromDeck, deck, card, updateDeck } = this.props;
   return (
     <section className='flashCards'>
+    
       
-      <Card cardId={props.card.cardNumber}
-            term={props.card.term}
-            definition={props.card.definition}
-            getRandomCard={props.getRandomCard}
-            removeFromDeck={props.removeFromDeck}
+      <Card cardId={card.cardNumber}
+            term={card.term}
+            deck={deck}
+            definition={card.definition}
+            getRandomCard={getRandomCard}
+            removeFromDeck={removeFromDeck}
+            updateDeck={updateDeck}
+
             // addDuplicate={props.card.addDuplicate} 
             />
-            
+          
     </section>
   )
 }

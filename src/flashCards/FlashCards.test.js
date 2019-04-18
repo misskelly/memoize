@@ -5,6 +5,7 @@ import { shallow } from 'enzyme';
 
 const mockRemoveFromDeck = jest.fn();
 const mockGetRandomCard = jest.fn();
+const mockUpdateDeck = jest.fn();
 
 describe('FlashCards', () => {
   let wrapper;
@@ -13,7 +14,8 @@ describe('FlashCards', () => {
       <FlashCards deck={mockCards}
                   card={mockCurrentCard}
                   getRandomCard={mockGetRandomCard}
-                  removeFromDeck={mockRemoveFromDeck}/>
+                  removeFromDeck={mockRemoveFromDeck}
+                  updateDeck={mockUpdateDeck}/>
     )
   });
 
