@@ -211,6 +211,7 @@ ShallowWrapper {
               },
             ]
           }
+          getRandomCard={[Function]}
           updateDeck={[Function]}
         />,
         <FlashCards
@@ -433,6 +434,7 @@ ShallowWrapper {
               "term": ".simulate()",
             },
           ],
+          "getRandomCard": [Function],
           "updateDeck": [Function],
         },
         "ref": null,
@@ -660,6 +662,7 @@ ShallowWrapper {
                 },
               ]
             }
+            getRandomCard={[Function]}
             updateDeck={[Function]}
           />,
           <FlashCards
@@ -882,6 +885,7 @@ ShallowWrapper {
                 "term": ".simulate()",
               },
             ],
+            "getRandomCard": [Function],
             "updateDeck": [Function],
           },
           "ref": null,

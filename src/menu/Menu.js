@@ -24,6 +24,7 @@ export default class Menu extends Component {
     const { allCards, updateDeck } = this.props;
     const updatedDeck = filterDeck(chosenDeck, allCards);
     updateDeck(updatedDeck);
+    console.log('chosen:', chosenDeck, 'updated:',updatedDeck)
   }
   
   handleSubmit = (e) => {
@@ -39,7 +40,7 @@ export default class Menu extends Component {
   //  TODO : update student method
   
   render () {
-    const { allCards, updateDeck } = this.props;
+    const { allCards, updateDeck, getRandomCard } = this.props;
     return (
       <section className='mainMenu'>
         <h3 className='greetingHeading'>Hello Friend!</h3>
@@ -65,7 +66,10 @@ export default class Menu extends Component {
           <Button type='basicsDeckBtn'
                   buttonText='React Basics'
                   label=''
-                  selectDeck={this.selectDeck}/>
+                  selectDeck={this.selectDeck}
+                  getRandomCard={getRandomCard}
+                  updateDeck={updateDeck}/>
+                  
           <Button type='testingDeckBtn'
                   buttonText='React Testing'
                   label=''
@@ -73,13 +77,16 @@ export default class Menu extends Component {
           <Button type='previousDeck'
                   buttonText='Keep Going'
                   label=''
-// TODO: local Storage!!!!                  
+                  getRandomCard={getRandomCard}
+                  updateDeck={updateDeck}
+                  // TODO: local Storage!!!!                  
                   // selectDeck={storedDeck}
                   />
           <Button type='fullDeck'
                   buttonText='Everything'
                   label=''
-                  allTerms={updateDeck}
+                  getRandomCard={getRandomCard}
+                  allTerms={this.updateDeck}
                   allCards={allCards}/>
 
         </form>

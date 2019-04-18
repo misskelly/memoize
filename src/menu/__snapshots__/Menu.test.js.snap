@@ -87,6 +87,7 @@ ShallowWrapper {
             label=""
             selectDeck={[Function]}
             type="basicsDeckBtn"
+            updateDeck={[Function]}
           />
           <Button
             buttonText="React Testing"
@@ -98,6 +99,7 @@ ShallowWrapper {
             buttonText="Keep Going"
             label=""
             type="previousDeck"
+            updateDeck={[Function]}
           />
           <Button
             allCards={
@@ -128,7 +130,6 @@ ShallowWrapper {
                 },
               ]
             }
-            allTerms={[Function]}
             buttonText="Everything"
             label=""
             type="fullDeck"
@@ -186,6 +187,7 @@ ShallowWrapper {
               label=""
               selectDeck={[Function]}
               type="basicsDeckBtn"
+              updateDeck={[Function]}
             />,
             <Button
               buttonText="React Testing"
@@ -197,6 +199,7 @@ ShallowWrapper {
               buttonText="Keep Going"
               label=""
               type="previousDeck"
+              updateDeck={[Function]}
             />,
             <Button
               allCards={
@@ -227,7 +230,6 @@ ShallowWrapper {
                   },
                 ]
               }
-              allTerms={[Function]}
               buttonText="Everything"
               label=""
               type="fullDeck"
@@ -298,9 +300,11 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "buttonText": "React Basics",
+              "getRandomCard": undefined,
               "label": "",
               "selectDeck": [Function],
               "type": "basicsDeckBtn",
+              "updateDeck": [Function],
             },
             "ref": null,
             "rendered": null,
@@ -326,8 +330,10 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "buttonText": "Keep Going",
+              "getRandomCard": undefined,
               "label": "",
               "type": "previousDeck",
+              "updateDeck": [Function],
             },
             "ref": null,
             "rendered": null,
@@ -364,8 +370,9 @@ ShallowWrapper {
                   "term": "Enzyme",
                 },
               ],
-              "allTerms": [Function],
+              "allTerms": undefined,
               "buttonText": "Everything",
+              "getRandomCard": undefined,
               "label": "",
               "type": "fullDeck",
             },
@@ -424,6 +431,7 @@ ShallowWrapper {
               label=""
               selectDeck={[Function]}
               type="basicsDeckBtn"
+              updateDeck={[Function]}
             />
             <Button
               buttonText="React Testing"
@@ -435,6 +443,7 @@ ShallowWrapper {
               buttonText="Keep Going"
               label=""
               type="previousDeck"
+              updateDeck={[Function]}
             />
             <Button
               allCards={
@@ -465,7 +474,6 @@ ShallowWrapper {
                   },
                 ]
               }
-              allTerms={[Function]}
               buttonText="Everything"
               label=""
               type="fullDeck"
@@ -523,6 +531,7 @@ ShallowWrapper {
                 label=""
                 selectDeck={[Function]}
                 type="basicsDeckBtn"
+                updateDeck={[Function]}
               />,
               <Button
                 buttonText="React Testing"
@@ -534,6 +543,7 @@ ShallowWrapper {
                 buttonText="Keep Going"
                 label=""
                 type="previousDeck"
+                updateDeck={[Function]}
               />,
               <Button
                 allCards={
@@ -564,7 +574,6 @@ ShallowWrapper {
                     },
                   ]
                 }
-                allTerms={[Function]}
                 buttonText="Everything"
                 label=""
                 type="fullDeck"
@@ -635,9 +644,11 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "buttonText": "React Basics",
+                "getRandomCard": undefined,
                 "label": "",
                 "selectDeck": [Function],
                 "type": "basicsDeckBtn",
+                "updateDeck": [Function],
               },
               "ref": null,
               "rendered": null,
@@ -663,8 +674,10 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "buttonText": "Keep Going",
+                "getRandomCard": undefined,
                 "label": "",
                 "type": "previousDeck",
+                "updateDeck": [Function],
               },
               "ref": null,
               "rendered": null,
@@ -701,8 +714,9 @@ ShallowWrapper {
                     "term": "Enzyme",
                   },
                 ],
-                "allTerms": [Function],
+                "allTerms": undefined,
                 "buttonText": "Everything",
+                "getRandomCard": undefined,
                 "label": "",
                 "type": "fullDeck",
               },

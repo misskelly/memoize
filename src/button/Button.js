@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 export default class Button extends Component {
 
   handleClick = (e) => {
-    const { selectDeck, removeFromDeck, getRandomCard, updateDeck, allCards, cardId } = this.props;
+    const { selectDeck, removeFromDeck, getRandomCard, allTerms, allCards, cardId } = this.props;
     
     switch (e.target.id) {
       case 'basicsDeckBtn':
@@ -16,11 +16,11 @@ export default class Button extends Component {
         removeFromDeck(cardId);
         break
       default:
-        updateDeck(allCards)
+        allTerms(allCards)
       }
-      
     getRandomCard();
   }
+
   render() {
     const { type, buttonText, label } = this.props;
     return (

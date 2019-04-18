@@ -14,7 +14,7 @@ export default class App extends Component {
       currentCard: flashCards[0]
     }
     this.removeFromDeck = this.removeFromDeck.bind(this);
-    this.getRandomCard = this.getRandomCard.bind(this);
+    // this.getRandomCard = this.getRandomCard.bind(this);
   }
 
   updateDeck = (newDeck) => {
@@ -60,7 +60,7 @@ export default class App extends Component {
 
   getRandomCard = () => {
     const randomNum = Math.floor(Math.random() * this.state.currentDeck.length);
-    this.updateCurrentCard(this.state.currentDeck[randomNum])
+    this.updateCurrentCard(this.state.currentDeck[randomNum]);
   }
     
   render () {
@@ -69,6 +69,7 @@ export default class App extends Component {
       <main className='appContainer'>
         <Header />
         <Menu allCards={allCards}
+              getRandomCard={this.getRandomCard}
               updateDeck={this.updateDeck}/>
         <FlashCards deck={currentDeck}
                     card={currentCard}
