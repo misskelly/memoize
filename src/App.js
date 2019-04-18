@@ -20,6 +20,7 @@ export default class App extends Component {
   
   componentDidMount() {
     this.fetchData();
+    console.log(this.state)
     let deck = localStorage.getItem("savedDeck") === null ? 
     this.state.allCards : 
     JSON.parse(localStorage.getItem('savedDeck'));
@@ -30,11 +31,11 @@ export default class App extends Component {
   
   fetchData() {
     fetch('https://fe-apps.herokuapp.com/api/v1/memoize/1901/kzickmemoizedata/flashcards')
-    .then(response => response.json())
+    .then(data => data.json())
     .then(data => this.setState({
       allCards: data.flashCards
     }))
-    .catch(err => console.log(err, 'Uh oh! Something is broken, cannot retrieve flashcards'));
+    .catch(err => console.log(err));
     console.log(this.state);
   }
 
