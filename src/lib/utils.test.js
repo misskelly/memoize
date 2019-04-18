@@ -1,8 +1,8 @@
-import React from 'react';
-import { removeCard } from './utils';
+// import React from 'react';
+import { removeCard, filterDeck } from './utils';
 import { mockCards, mockCurrentCard
 } from './mockData';
-import { shallow } from 'enzyme';
+// import { shallow } from 'enzyme';
 
 
 
@@ -26,6 +26,32 @@ describe('removeCard', () => {
     expect(result).toHaveLength( 3 );
   });
 
-
 });
+
+
+
+describe('filterDeck', () => {
+
+  it('should filter deck by react basics or react testing', () => {
+    
+    filterDeck('basics', mockCards);
+
+    expect.arrayContaining({
+      'categoryId': 1
+    });
+    expect.not.arrayContaining({
+      'categoryId': 2
+    });
+
+    filterDeck('testing', mockCards);
+
+      expect.arrayContaining({
+        'categoryId': 2
+      });
+      expect.not.arrayContaining({
+        'categoryId': 1
+      });
+
+  })
+})
 
