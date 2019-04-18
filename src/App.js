@@ -34,7 +34,7 @@ export default class App extends Component {
 
   updateDeck = (newDeck) => {
     this.setState({currentDeck: newDeck}, () => {
-      console.log(this.state.allCards, this.state.currentDeck)
+      // console.log(this.state.allCards, this.state.currentDeck)
     });
   }
 
