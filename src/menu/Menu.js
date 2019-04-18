@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from '../button/Button'
 
 export default class Menu extends Component {
   constructor(props) {
@@ -8,6 +9,16 @@ export default class Menu extends Component {
       selectedDeck: props.allCards
     }
   }
+
+
+  //  TODO : update student method
+  updateStudent = (name) => {
+  this.setState({
+    student: name
+  })
+  } 
+
+  //handleNameInput
 
   render () {
     const { allCards } = this.props;
@@ -21,10 +32,19 @@ export default class Menu extends Component {
           </label>
           <input  type='text'
                   id='nameInput'
-                  className='nameInput' placeholder='Your name here.....'/>
+                  className='nameInput' placeholder='Your name here.....'
+                  onChange='handleNameInput'/>
           <h3 className='chooseDeckHeading'>
             Which terms would you like to review?
           </h3>
+
+          <Button type='reactDeckBtn'
+            buttonText='React Basics'
+            label=''/>
+          
+                
+                  
+
 
         </form>
       

@@ -33,10 +33,10 @@ ShallowWrapper {
           "term": "JSX",
         },
         Object {
-          "cardNumber": 104,
-          "categoryId": 1,
-          "definition": "Reusable pieces of code that represent templates for a particular instance of a UI element. They are either functions or an extended ES6 class",
-          "term": "Component",
+          "cardNumber": 205,
+          "categoryId": 2,
+          "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
+          "term": "Enzyme",
         },
       ]
     }

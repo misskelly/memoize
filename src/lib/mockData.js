@@ -18,11 +18,11 @@ const mockCards = [
     "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component"
   },
   {
-    "categoryId": 1,
-    "cardNumber": 104,
-    "term": "Component",
-    "definition": "Reusable pieces of code that represent templates for a particular instance of a UI element. They are either functions or an extended ES6 class"
-  }
+    "categoryId": 2,
+    "cardNumber": 205,
+    "term": "Enzyme",
+    "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality."
+  },
 ]
 
 const mockCurrentCard = {
