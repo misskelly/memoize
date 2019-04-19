@@ -1,6 +1,7 @@
 {
   "name": "memoize",
   "version": "0.1.0",
+  "homepage": "https://misskelly.github.io/memoize/",
   "private": true,
   "dependencies": {
     "node-sass": "^4.11.0",

@@ -29,7 +29,8 @@ describe('App', () => {
     expect(wrapper.state()).toEqual({
       allCards: [],
       currentDeck: [],
-      currentCard: ''
+      currentCard: '',
+      visibleMenu: true
     });
   });
 
@@ -39,33 +40,37 @@ describe('App', () => {
     expect(wrapper.state()).toEqual({
       allCards: [],
       currentDeck: [],
-      currentCard: ''
+      currentCard: '',
+      visibleMenu: true
     });
-
+    
     wrapper.instance().updateCurrentCard(mockCurrentCard);
-
+    
     expect(wrapper.state()).toEqual({
       allCards: [],
       currentDeck: [],
-      currentCard: mockCurrentCard}
-      );
-      
+      currentCard: mockCurrentCard,
+      visibleMenu: true
+    });
+    
   });
-
+  
   it('should update the current deck', () => {
     
     expect(wrapper.state()).toEqual({
       allCards: [],
       currentDeck: [],
-      currentCard: ''
+      currentCard: '',
+      visibleMenu: true
     });
-
+    
     wrapper.instance().updateDeck(mockCards);
     
     expect(wrapper.state()).toEqual({
       allCards: [],
       currentDeck: mockCards,
-      currentCard: ''
+      currentCard: '',
+      visibleMenu: true
     });
     
   });

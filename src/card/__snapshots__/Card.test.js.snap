@@ -28,11 +28,15 @@ ShallowWrapper {
         <article
           className="termSide card"
         >
-          <h4
-            className="termText"
+          <div
+            className="termWrapper"
           >
-            .simulate()
-          </h4>
+            <h4
+              className="termText"
+            >
+              .simulate()
+            </h4>
+          </div>
           <div
             className="iconBtnWrapper"
           >
@@ -65,11 +69,15 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h4
-              className="termText"
+            <div
+              className="termWrapper"
             >
-              .simulate()
-            </h4>,
+              <h4
+                className="termText"
+              >
+                .simulate()
+              </h4>
+            </div>,
             <div
               className="iconBtnWrapper"
             >
@@ -98,12 +106,27 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": ".simulate()",
-              "className": "termText",
+              "children": <h4
+                className="termText"
+              >
+                .simulate()
+              </h4>,
+              "className": "termWrapper",
             },
             "ref": null,
-            "rendered": ".simulate()",
-            "type": "h4",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": ".simulate()",
+                "className": "termText",
+              },
+              "ref": null,
+              "rendered": ".simulate()",
+              "type": "h4",
+            },
+            "type": "div",
           },
           Object {
             "instance": null,
@@ -180,11 +203,15 @@ ShallowWrapper {
           <article
             className="termSide card"
           >
-            <h4
-              className="termText"
+            <div
+              className="termWrapper"
             >
-              .simulate()
-            </h4>
+              <h4
+                className="termText"
+              >
+                .simulate()
+              </h4>
+            </div>
             <div
               className="iconBtnWrapper"
             >
@@ -217,11 +244,15 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <h4
-                className="termText"
+              <div
+                className="termWrapper"
               >
-                .simulate()
-              </h4>,
+                <h4
+                  className="termText"
+                >
+                  .simulate()
+                </h4>
+              </div>,
               <div
                 className="iconBtnWrapper"
               >
@@ -250,12 +281,27 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": ".simulate()",
-                "className": "termText",
+                "children": <h4
+                  className="termText"
+                >
+                  .simulate()
+                </h4>,
+                "className": "termWrapper",
               },
               "ref": null,
-              "rendered": ".simulate()",
-              "type": "h4",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": ".simulate()",
+                  "className": "termText",
+                },
+                "ref": null,
+                "rendered": ".simulate()",
+                "type": "h4",
+              },
+              "type": "div",
             },
             Object {
               "instance": null,
