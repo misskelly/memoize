@@ -33,6 +33,7 @@ export default class App extends Component {
 
   updateDeck = (newDeck) => {
     this.setState({currentDeck: newDeck}, () => {
+      localStorage.setItem('savedDeck', JSON.stringify(this.state.currentDeck))
       console.log(this.state.currentDeck)
     });
   }
