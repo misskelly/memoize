@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '../card/Card'
 
-export default function FlashCards (props) {
+export default function FlashCards(props) {
   const { getRandomCard, removeFromDeck, deck, card, updateDeck } = this.props;
   return (
     <section className='flashCards'>
