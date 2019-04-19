@@ -4,8 +4,7 @@ exports[`Button should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Button
-    getRandomCard={[MockFunction]}
-    removeFromDeck={[MockFunction]}
+    onClick={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

@@ -5,7 +5,6 @@ export default function FlashCards(props) {
   const { getRandomCard, removeFromDeck, deck, card, updateDeck } = props;
   return (
     <section className='flashCards'>
-    
       
       <Card cardId={card.cardNumber}
             term={card.term}

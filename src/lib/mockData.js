@@ -32,6 +32,8 @@ const mockCurrentCard = {
   "definition": "Simulates an event on an element by passing the event name string in as an argument."
 }
 
+const mockFunctions = 
+
 
 module.exports = {
   mockCards,

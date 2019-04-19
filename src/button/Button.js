@@ -37,7 +37,7 @@ export default class Button extends Component {
   }
 
   render() {
-    const { type, buttonText, label } = this.props;
+    const { type, buttonText, label, className } = this.props;
     return (
       <div className='cardBtnWrapper'>
         <button className='cardBtn' 

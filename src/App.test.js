@@ -8,9 +8,10 @@ import { shallow } from 'enzyme';
 
 describe('App', () => {
 
-  const mockRandomNumber = jest.fn();
   const mockRemoveFromDeck = jest.fn();
   const mockGetRandomCard = jest.fn();
+  const mockUpdateDeck = jest.fn();
+
   
   let wrapper;
 
@@ -24,25 +25,62 @@ describe('App', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  // it('should have the proper default state', () => {
-  //   expect(wrapper.state()).toEqual({
-  //     allCards: flashCards,
-  //     currentCard:flashCards[0] });
-  // });
+  it('should have the proper default state', () => {
+    expect(wrapper.state()).toEqual({
+      allCards: [],
+      currentDeck: [],
+      currentCard: ''
+    });
+  });
 
 
+  it('should update the current card', () => {
+    
+    expect(wrapper.state()).toEqual({
+      allCards: [],
+      currentDeck: [],
+      currentCard: ''
+    });
 
-  // it('should update the current card', () => {
-  //   expect(wrapper.state()).toEqual({
-  //     allCards: flashCards,
-  //     currentCard: null
-  //   });
-  //     wrapper.instance().updateCurrentCard(mockCard);
-  //   expect(wrapper.state()).toEqual({
-  //     allCards: flashCards,
-  //     currentCard: mockCard});
+    wrapper.instance().updateCurrentCard(mockCurrentCard);
 
-  // });
+    expect(wrapper.state()).toEqual({
+      allCards: [],
+      currentDeck: [],
+      currentCard: mockCurrentCard}
+      );
+      
+  });
+
+  it('should update the current deck', () => {
+    
+    expect(wrapper.state()).toEqual({
+      allCards: [],
+      currentDeck: [],
+      currentCard: ''
+    });
+
+    wrapper.instance().updateDeck(mockCards);
+    
+    expect(wrapper.state()).toEqual({
+      allCards: [],
+      currentDeck: mockCards,
+      currentCard: ''
+    });
+    
+  });
+  
+  it('should generate a random number', () => {
+    expect(typeof wrapper.instance().getRandomCard()).toEqual('number');
+  });
+
+  it('should return a number between 0 and 30', () => {
+    const returnedNum = wrapper.instance().getRandomCard();
+    expect(returnedNum).toBeGreaterThanOrEqual(0);
+    expect(returnedNum).toBeLessThan(30);
+  });
+  
+
 
   
 

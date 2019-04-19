@@ -1,20 +1,22 @@
 import React from 'react';
 import Button from './Button';
-import { mockCurrentCard } from '../lib/mockData'
+import { mockCurrentCard, mockCards } from '../lib/mockData'
 import { shallow } from 'enzyme';
 
-const mockRemoveFromDeck = jest.fn();
-const mockGetRandomCard = jest.fn();
-
+const mockHandleClick = jest.fn();
 
 describe('Button', () => {
   let wrapper;
   beforeEach(() => {
     wrapper = shallow(
+       <Button  onClick={mockHandleClick}/>
 
-      <Button removeFromDeck={mockRemoveFromDeck}
-              getRandomCard={mockGetRandomCard}
-              cardId={mockCurrentCard.cardId}  />
+      // <Button allCards={mockCards}
+      //         updateDeck={mockUpdateDeck}
+      //         selectDeck={mockSelectDeck}
+      //         removeFromDeck={mockRemoveFromDeck}
+      //         getRandomCard={mockGetRandomCard}
+      //         cardId={mockCurrentCard.cardId}  />
     )
   });
 
@@ -22,12 +24,13 @@ describe('Button', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  // it('should call handleClick when button is clicked', () => {
+  //   wrapper.find('#almostBtn').simulate('click');
+  //   expect(mockHandleClick).toHaveBeenCalled();
+  // })
+
+
 });
 
-
-//  it("should call toggle function when button is clicked", () => {
-//  wrapper.find("button").simulate("click");
-//  expect(mockToggleCard).toHaveBeenCalled();
-//  });
 
 
