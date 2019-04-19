@@ -27,6 +27,11 @@ export default class Menu extends Component {
     console.log('chosen:', chosenDeck, 'updated:',updatedDeck)
   }
   
+  allTerms = () => {
+    const { allCards, updateDeck } = this.props;
+    updateDeck(allCards);
+  }
+  
   handleSubmit = (e) => {
     const { student } = this.state;
     e.preventDefault();
@@ -73,6 +78,7 @@ export default class Menu extends Component {
           <Button type='testingDeckBtn'
                   buttonText='React Testing'
                   label=''
+                  getRandomCard={getRandomCard}
                   selectDeck={this.selectDeck}/>
           <Button type='previousDeck'
                   buttonText='Keep Going'

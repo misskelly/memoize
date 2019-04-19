@@ -15,13 +15,7 @@ export default class Card extends Component {
 
 
   render() {
-      const { 
-        getRandomCard,
-        removeFromDeck,
-        cardId,
-        term, 
-        definition 
-      } = this.props
+      const { getRandomCard, updateDeck, removeFromDeck, cardId, deck, term, definition } = this.props
       // const { termFaceUp } =  this.state 
     return (
       <section className='featuredCard' id={cardId}>
@@ -44,12 +38,16 @@ export default class Card extends Component {
                     />
             <Button type='almostBtn'
                     buttonText='So Close!'
-                    label='Better come back to that one later.' 
+                    label='Better come back to that one later.'
+                    deck={deck}
+                    updateDeck={updateDeck} 
                     getRandomCard={getRandomCard}
                     />
             <Button type='wrongAnswerBtn'
                     buttonText='Not a clue.'
                     label='Yikes, I need extra review on that one!' 
+                    deck={deck}
+                    updateDeck={updateDeck} 
                     getRandomCard={getRandomCard}
 
                     // Better add a duplicate!'

@@ -22,55 +22,56 @@ export default class App extends Component {
     fetch('https://fe-apps.herokuapp.com/api/v1/memoize/1901/kzickmemoizedata/flashcards')
     .then(data => data.json())
     .then(data => this.setState({allCards: data.flashCards}, () => {
-      this.getDeck();
+      this.getCurrentDeck();
     }))
-    .catch(err => console.log(err));
+    .catch(err => console.log(err, 'Something has gone terribly wrong.'));
   }
 
-  getDeck = () => {
+  getCurrentDeck = () => {
     let deck = JSON.parse(localStorage.getItem('savedDeck')) || this.state.allCards;
     this.updateDeck(deck);
   }
 
   updateDeck = (newDeck) => {
     this.setState({currentDeck: newDeck}, () => {
-      // console.log(this.state.allCards, this.state.currentDeck)
+      console.log(this.state.currentDeck)
     });
   }
 
   updateCurrentCard = (newCard) => {
-    this.setState({currentCard: newCard}, () => console.log(this.state.currentCard));
-    
+    this.setState({currentCard: newCard}, 
+      // () => console.log(this.state.currentCard)
+      );
   }
   
   removeFromDeck = (id) => {
-    const { currentDeck } = this.state
-    const updatedDeck = removeCard(id, currentDeck)
-    this.updateDeck(updatedDeck)
+    const { currentDeck } = this.state;
+    const updatedDeck = removeCard(id, currentDeck);
+    this.updateDeck(updatedDeck);
   }
 
   getRandomCard = () => {
     const randomNum = Math.floor(Math.random() * this.state.currentDeck.length);
     this.updateCurrentCard(this.state.currentDeck[randomNum]);
-    console.log('randomCard called')
     return randomNum;
   }
     
   render () {
     const { allCards, currentDeck, currentCard } = this.state;
-    console.log('current card:', currentCard)
     return (
       <main className='appContainer'>
         <Header />
         <Menu allCards={allCards}
               getRandomCard={this.getRandomCard}
-              updateDeck={this.updateDeck}/>
-        {currentDeck.length &&
-        <FlashCards deck={currentDeck}
+              updateDeck={this.updateDeck}
+              />
+        <FlashCards 
+                    deck={currentDeck}
                     card={currentCard}
                     getRandomCard={this.getRandomCard}
                     removeFromDeck={this.removeFromDeck}
-        /> }
+                    updateDeck={this.updateDeck}
+        /> 
       </main>
     );
   }

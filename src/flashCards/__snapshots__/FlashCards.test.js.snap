@@ -42,6 +42,7 @@ ShallowWrapper {
     }
     getRandomCard={[MockFunction]}
     removeFromDeck={[MockFunction]}
+    updateDeck={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -59,10 +60,39 @@ ShallowWrapper {
     "props": Object {
       "children": <Card
         cardId={103}
+        deck={
+          Array [
+            Object {
+              "cardNumber": 101,
+              "categoryId": 1,
+              "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
+              "term": "React",
+            },
+            Object {
+              "cardNumber": 102,
+              "categoryId": 1,
+              "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
+              "term": "The Virtual DOM",
+            },
+            Object {
+              "cardNumber": 103,
+              "categoryId": 1,
+              "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
+              "term": "JSX",
+            },
+            Object {
+              "cardNumber": 205,
+              "categoryId": 2,
+              "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
+              "term": "Enzyme",
+            },
+          ]
+        }
         definition="Simulates an event on an element by passing the event name string in as an argument."
         getRandomCard={[MockFunction]}
         removeFromDeck={[MockFunction]}
         term=".simulate()"
+        updateDeck={[MockFunction]}
       />,
       "className": "flashCards",
     },
@@ -73,10 +103,37 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "cardId": 103,
+        "deck": Array [
+          Object {
+            "cardNumber": 101,
+            "categoryId": 1,
+            "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
+            "term": "React",
+          },
+          Object {
+            "cardNumber": 102,
+            "categoryId": 1,
+            "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
+            "term": "The Virtual DOM",
+          },
+          Object {
+            "cardNumber": 103,
+            "categoryId": 1,
+            "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
+            "term": "JSX",
+          },
+          Object {
+            "cardNumber": 205,
+            "categoryId": 2,
+            "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
+            "term": "Enzyme",
+          },
+        ],
         "definition": "Simulates an event on an element by passing the event name string in as an argument.",
         "getRandomCard": [MockFunction],
         "removeFromDeck": [MockFunction],
         "term": ".simulate()",
+        "updateDeck": [MockFunction],
       },
       "ref": null,
       "rendered": null,
@@ -92,10 +149,39 @@ ShallowWrapper {
       "props": Object {
         "children": <Card
           cardId={103}
+          deck={
+            Array [
+              Object {
+                "cardNumber": 101,
+                "categoryId": 1,
+                "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
+                "term": "React",
+              },
+              Object {
+                "cardNumber": 102,
+                "categoryId": 1,
+                "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
+                "term": "The Virtual DOM",
+              },
+              Object {
+                "cardNumber": 103,
+                "categoryId": 1,
+                "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
+                "term": "JSX",
+              },
+              Object {
+                "cardNumber": 205,
+                "categoryId": 2,
+                "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
+                "term": "Enzyme",
+              },
+            ]
+          }
           definition="Simulates an event on an element by passing the event name string in as an argument."
           getRandomCard={[MockFunction]}
           removeFromDeck={[MockFunction]}
           term=".simulate()"
+          updateDeck={[MockFunction]}
         />,
         "className": "flashCards",
       },
@@ -106,10 +192,37 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "cardId": 103,
+          "deck": Array [
+            Object {
+              "cardNumber": 101,
+              "categoryId": 1,
+              "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
+              "term": "React",
+            },
+            Object {
+              "cardNumber": 102,
+              "categoryId": 1,
+              "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
+              "term": "The Virtual DOM",
+            },
+            Object {
+              "cardNumber": 103,
+              "categoryId": 1,
+              "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
+              "term": "JSX",
+            },
+            Object {
+              "cardNumber": 205,
+              "categoryId": 2,
+              "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
+              "term": "Enzyme",
+            },
+          ],
           "definition": "Simulates an event on an element by passing the event name string in as an argument.",
           "getRandomCard": [MockFunction],
           "removeFromDeck": [MockFunction],
           "term": ".simulate()",
+          "updateDeck": [MockFunction],
         },
         "ref": null,
         "rendered": null,
