@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import flipArrow from '../Styles/flipArrow.png';
-import trash from '../Styles/trash.png';
+import flipArrow from '../assets/flipArrow.png';
+import trash from '../assets/trash.png';
 import Button from '../button/Button'
 
 export default class Card extends Component {
@@ -33,7 +33,7 @@ export default class Card extends Component {
   }
 
   render() {
-      const { getRandomCard, updateDeck, removeFromDeck, cardId, deck, term, definition } = this.props
+      const { getRandomCard, updateDeck, removeFromDeck, hideMenu, cardId, deck, term, definition } = this.props
       const { termFaceUp } =  this.state 
 
       
@@ -42,7 +42,9 @@ export default class Card extends Component {
       {
         termFaceUp &&
         <article className='termSide card'>
-          <h4 className='termText'>{term}</h4>
+          <div className='termWrapper'>
+            <h4 className='termText'>{term}</h4>
+          </div>
           <div className='iconBtnWrapper' >
             <img src={trash} 
                   alt='I am a little trash can! Click me to remove this card from the deck.' 
@@ -69,6 +71,7 @@ export default class Card extends Component {
                     removeFromDeck={removeFromDeck}
                     cardId={cardId} 
                     getRandomCard={getRandomCard}
+                    hideMenu={hideMenu}
                     />
             <Button type='almostBtn'
                     buttonText='So Close!'
@@ -77,6 +80,7 @@ export default class Card extends Component {
                     flipCard={this.flipCard}
                     updateDeck={updateDeck} 
                     getRandomCard={getRandomCard}
+                    hideMenu={hideMenu}
                     />
             <Button type='wrongAnswerBtn'
                     buttonText='Not a clue.'
@@ -85,6 +89,7 @@ export default class Card extends Component {
                     flipCard={this.flipCard}
                     updateDeck={updateDeck} 
                     getRandomCard={getRandomCard}
+                    hideMenu={hideMenu}
                     
                     // Better add a duplicate!'
                     // addDuplicate={props.addDuplicate} 

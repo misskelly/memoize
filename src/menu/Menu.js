@@ -21,6 +21,7 @@ export default class Menu extends Component {
   } 
   
   selectDeck = (chosenDeck) => {
+    console.log(this.props)
     const { allCards, updateDeck } = this.props;
     const updatedDeck = filterDeck(chosenDeck, allCards);
     updateDeck(updatedDeck);
@@ -45,7 +46,7 @@ export default class Menu extends Component {
   //  TODO : update student method
   
   render () {
-    const { allCards, updateDeck, getRandomCard } = this.props;
+    const { allCards, updateDeck, getRandomCard, hideMenu } = this.props;
     return (
       <section className='mainMenu'>
         <h3 className='greetingHeading'>Hello Friend!</h3>
@@ -59,7 +60,7 @@ export default class Menu extends Component {
                   className='nameInput' placeholder='Your name here.....'
                   onChange={this.updateStudent}/>
           <button type='submit' 
-                  className='updateNameButton'
+                  className='updateNameBtn'
                   autoComplete = "fname" 
                   autoFocus>
                   
@@ -67,24 +68,26 @@ export default class Menu extends Component {
           <h4 className='chooseDeckHeading'>
             Which terms would you like to review?
           </h4>
-
+          <div className='menuBtnWrapper'>
           <Button type='basicsDeckBtn'
                   buttonText='React Basics'
                   label=''
                   selectDeck={this.selectDeck}
                   getRandomCard={getRandomCard}
+                  hideMenu={hideMenu}    
                   updateDeck={updateDeck}/>
-                  
           <Button type='testingDeckBtn'
                   buttonText='React Testing'
                   label=''
                   getRandomCard={getRandomCard}
+                  hideMenu={hideMenu}
                   selectDeck={this.selectDeck}/>
           <Button type='previousDeck'
                   buttonText='Keep Going'
                   label=''
                   getRandomCard={getRandomCard}
                   updateDeck={updateDeck}
+                  hideMenu={hideMenu}
                   // TODO: local Storage!!!!                  
                   // selectDeck={storedDeck}
                   />
@@ -93,8 +96,10 @@ export default class Menu extends Component {
                   label=''
                   getRandomCard={getRandomCard}
                   allTerms={this.allTerms}
+                  hideMenu={hideMenu}
                   allCards={allCards}/>
 
+          </div>
         </form>
       
       </section>

@@ -74,7 +74,7 @@ ShallowWrapper {
           <button
             autoComplete="fname"
             autoFocus={true}
-            className="updateNameButton"
+            className="updateNameBtn"
             type="submit"
           />
           <h4
@@ -82,58 +82,63 @@ ShallowWrapper {
           >
             Which terms would you like to review?
           </h4>
-          <Button
-            buttonText="React Basics"
-            label=""
-            selectDeck={[Function]}
-            type="basicsDeckBtn"
-            updateDeck={[Function]}
-          />
-          <Button
-            buttonText="React Testing"
-            label=""
-            selectDeck={[Function]}
-            type="testingDeckBtn"
-          />
-          <Button
-            buttonText="Keep Going"
-            label=""
-            type="previousDeck"
-            updateDeck={[Function]}
-          />
-          <Button
-            allCards={
-              Array [
-                Object {
-                  "cardNumber": 101,
-                  "categoryId": 1,
-                  "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
-                  "term": "React",
-                },
-                Object {
-                  "cardNumber": 102,
-                  "categoryId": 1,
-                  "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
-                  "term": "The Virtual DOM",
-                },
-                Object {
-                  "cardNumber": 103,
-                  "categoryId": 1,
-                  "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
-                  "term": "JSX",
-                },
-                Object {
-                  "cardNumber": 205,
-                  "categoryId": 2,
-                  "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
-                  "term": "Enzyme",
-                },
-              ]
-            }
-            buttonText="Everything"
-            label=""
-            type="fullDeck"
-          />
+          <div
+            className="menuBtnWrapper"
+          >
+            <Button
+              buttonText="React Basics"
+              label=""
+              selectDeck={[Function]}
+              type="basicsDeckBtn"
+              updateDeck={[Function]}
+            />
+            <Button
+              buttonText="React Testing"
+              label=""
+              selectDeck={[Function]}
+              type="testingDeckBtn"
+            />
+            <Button
+              buttonText="Keep Going"
+              label=""
+              type="previousDeck"
+              updateDeck={[Function]}
+            />
+            <Button
+              allCards={
+                Array [
+                  Object {
+                    "cardNumber": 101,
+                    "categoryId": 1,
+                    "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
+                    "term": "React",
+                  },
+                  Object {
+                    "cardNumber": 102,
+                    "categoryId": 1,
+                    "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
+                    "term": "The Virtual DOM",
+                  },
+                  Object {
+                    "cardNumber": 103,
+                    "categoryId": 1,
+                    "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
+                    "term": "JSX",
+                  },
+                  Object {
+                    "cardNumber": 205,
+                    "categoryId": 2,
+                    "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
+                    "term": "Enzyme",
+                  },
+                ]
+              }
+              allTerms={[Function]}
+              buttonText="Everything"
+              label=""
+              type="fullDeck"
+            />
+          </div>
         </form>,
       ],
       "className": "mainMenu",
@@ -174,7 +179,7 @@ ShallowWrapper {
             <button
               autoComplete="fname"
               autoFocus={true}
-              className="updateNameButton"
+              className="updateNameBtn"
               type="submit"
             />,
             <h4
@@ -182,58 +187,63 @@ ShallowWrapper {
             >
               Which terms would you like to review?
             </h4>,
-            <Button
-              buttonText="React Basics"
-              label=""
-              selectDeck={[Function]}
-              type="basicsDeckBtn"
-              updateDeck={[Function]}
-            />,
-            <Button
-              buttonText="React Testing"
-              label=""
-              selectDeck={[Function]}
-              type="testingDeckBtn"
-            />,
-            <Button
-              buttonText="Keep Going"
-              label=""
-              type="previousDeck"
-              updateDeck={[Function]}
-            />,
-            <Button
-              allCards={
-                Array [
-                  Object {
-                    "cardNumber": 101,
-                    "categoryId": 1,
-                    "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
-                    "term": "React",
-                  },
-                  Object {
-                    "cardNumber": 102,
-                    "categoryId": 1,
-                    "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
-                    "term": "The Virtual DOM",
-                  },
-                  Object {
-                    "cardNumber": 103,
-                    "categoryId": 1,
-                    "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
-                    "term": "JSX",
-                  },
-                  Object {
-                    "cardNumber": 205,
-                    "categoryId": 2,
-                    "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
-                    "term": "Enzyme",
-                  },
-                ]
-              }
-              buttonText="Everything"
-              label=""
-              type="fullDeck"
-            />,
+            <div
+              className="menuBtnWrapper"
+            >
+              <Button
+                buttonText="React Basics"
+                label=""
+                selectDeck={[Function]}
+                type="basicsDeckBtn"
+                updateDeck={[Function]}
+              />
+              <Button
+                buttonText="React Testing"
+                label=""
+                selectDeck={[Function]}
+                type="testingDeckBtn"
+              />
+              <Button
+                buttonText="Keep Going"
+                label=""
+                type="previousDeck"
+                updateDeck={[Function]}
+              />
+              <Button
+                allCards={
+                  Array [
+                    Object {
+                      "cardNumber": 101,
+                      "categoryId": 1,
+                      "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
+                      "term": "React",
+                    },
+                    Object {
+                      "cardNumber": 102,
+                      "categoryId": 1,
+                      "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
+                      "term": "The Virtual DOM",
+                    },
+                    Object {
+                      "cardNumber": 103,
+                      "categoryId": 1,
+                      "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
+                      "term": "JSX",
+                    },
+                    Object {
+                      "cardNumber": 205,
+                      "categoryId": 2,
+                      "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
+                      "term": "Enzyme",
+                    },
+                  ]
+                }
+                allTerms={[Function]}
+                buttonText="Everything"
+                label=""
+                type="fullDeck"
+              />
+            </div>,
           ],
           "className": "menuForm",
           "onSubmit": [Function],
@@ -275,7 +285,7 @@ ShallowWrapper {
             "props": Object {
               "autoComplete": "fname",
               "autoFocus": true,
-              "className": "updateNameButton",
+              "className": "updateNameBtn",
               "type": "submit",
             },
             "ref": null,
@@ -297,89 +307,160 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "host",
             "props": Object {
-              "buttonText": "React Basics",
-              "getRandomCard": undefined,
-              "label": "",
-              "selectDeck": [Function],
-              "type": "basicsDeckBtn",
-              "updateDeck": [Function],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "buttonText": "React Testing",
-              "getRandomCard": undefined,
-              "label": "",
-              "selectDeck": [Function],
-              "type": "testingDeckBtn",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "buttonText": "Keep Going",
-              "getRandomCard": undefined,
-              "label": "",
-              "type": "previousDeck",
-              "updateDeck": [Function],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "allCards": Array [
-                Object {
-                  "cardNumber": 101,
-                  "categoryId": 1,
-                  "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
-                  "term": "React",
-                },
-                Object {
-                  "cardNumber": 102,
-                  "categoryId": 1,
-                  "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
-                  "term": "The Virtual DOM",
-                },
-                Object {
-                  "cardNumber": 103,
-                  "categoryId": 1,
-                  "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
-                  "term": "JSX",
-                },
-                Object {
-                  "cardNumber": 205,
-                  "categoryId": 2,
-                  "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
-                  "term": "Enzyme",
-                },
+              "children": Array [
+                <Button
+                  buttonText="React Basics"
+                  label=""
+                  selectDeck={[Function]}
+                  type="basicsDeckBtn"
+                  updateDeck={[Function]}
+                />,
+                <Button
+                  buttonText="React Testing"
+                  label=""
+                  selectDeck={[Function]}
+                  type="testingDeckBtn"
+                />,
+                <Button
+                  buttonText="Keep Going"
+                  label=""
+                  type="previousDeck"
+                  updateDeck={[Function]}
+                />,
+                <Button
+                  allCards={
+                    Array [
+                      Object {
+                        "cardNumber": 101,
+                        "categoryId": 1,
+                        "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
+                        "term": "React",
+                      },
+                      Object {
+                        "cardNumber": 102,
+                        "categoryId": 1,
+                        "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
+                        "term": "The Virtual DOM",
+                      },
+                      Object {
+                        "cardNumber": 103,
+                        "categoryId": 1,
+                        "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
+                        "term": "JSX",
+                      },
+                      Object {
+                        "cardNumber": 205,
+                        "categoryId": 2,
+                        "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
+                        "term": "Enzyme",
+                      },
+                    ]
+                  }
+                  allTerms={[Function]}
+                  buttonText="Everything"
+                  label=""
+                  type="fullDeck"
+                />,
               ],
-              "allTerms": undefined,
-              "buttonText": "Everything",
-              "getRandomCard": undefined,
-              "label": "",
-              "type": "fullDeck",
+              "className": "menuBtnWrapper",
             },
             "ref": null,
-            "rendered": null,
-            "type": [Function],
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "buttonText": "React Basics",
+                  "getRandomCard": undefined,
+                  "hideMenu": undefined,
+                  "label": "",
+                  "selectDeck": [Function],
+                  "type": "basicsDeckBtn",
+                  "updateDeck": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "buttonText": "React Testing",
+                  "getRandomCard": undefined,
+                  "hideMenu": undefined,
+                  "label": "",
+                  "selectDeck": [Function],
+                  "type": "testingDeckBtn",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "buttonText": "Keep Going",
+                  "getRandomCard": undefined,
+                  "hideMenu": undefined,
+                  "label": "",
+                  "type": "previousDeck",
+                  "updateDeck": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "allCards": Array [
+                    Object {
+                      "cardNumber": 101,
+                      "categoryId": 1,
+                      "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
+                      "term": "React",
+                    },
+                    Object {
+                      "cardNumber": 102,
+                      "categoryId": 1,
+                      "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
+                      "term": "The Virtual DOM",
+                    },
+                    Object {
+                      "cardNumber": 103,
+                      "categoryId": 1,
+                      "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
+                      "term": "JSX",
+                    },
+                    Object {
+                      "cardNumber": 205,
+                      "categoryId": 2,
+                      "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
+                      "term": "Enzyme",
+                    },
+                  ],
+                  "allTerms": [Function],
+                  "buttonText": "Everything",
+                  "getRandomCard": undefined,
+                  "hideMenu": undefined,
+                  "label": "",
+                  "type": "fullDeck",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
           },
         ],
         "type": "form",
@@ -419,7 +500,7 @@ ShallowWrapper {
             <button
               autoComplete="fname"
               autoFocus={true}
-              className="updateNameButton"
+              className="updateNameBtn"
               type="submit"
             />
             <h4
@@ -427,58 +508,63 @@ ShallowWrapper {
             >
               Which terms would you like to review?
             </h4>
-            <Button
-              buttonText="React Basics"
-              label=""
-              selectDeck={[Function]}
-              type="basicsDeckBtn"
-              updateDeck={[Function]}
-            />
-            <Button
-              buttonText="React Testing"
-              label=""
-              selectDeck={[Function]}
-              type="testingDeckBtn"
-            />
-            <Button
-              buttonText="Keep Going"
-              label=""
-              type="previousDeck"
-              updateDeck={[Function]}
-            />
-            <Button
-              allCards={
-                Array [
-                  Object {
-                    "cardNumber": 101,
-                    "categoryId": 1,
-                    "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
-                    "term": "React",
-                  },
-                  Object {
-                    "cardNumber": 102,
-                    "categoryId": 1,
-                    "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
-                    "term": "The Virtual DOM",
-                  },
-                  Object {
-                    "cardNumber": 103,
-                    "categoryId": 1,
-                    "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
-                    "term": "JSX",
-                  },
-                  Object {
-                    "cardNumber": 205,
-                    "categoryId": 2,
-                    "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
-                    "term": "Enzyme",
-                  },
-                ]
-              }
-              buttonText="Everything"
-              label=""
-              type="fullDeck"
-            />
+            <div
+              className="menuBtnWrapper"
+            >
+              <Button
+                buttonText="React Basics"
+                label=""
+                selectDeck={[Function]}
+                type="basicsDeckBtn"
+                updateDeck={[Function]}
+              />
+              <Button
+                buttonText="React Testing"
+                label=""
+                selectDeck={[Function]}
+                type="testingDeckBtn"
+              />
+              <Button
+                buttonText="Keep Going"
+                label=""
+                type="previousDeck"
+                updateDeck={[Function]}
+              />
+              <Button
+                allCards={
+                  Array [
+                    Object {
+                      "cardNumber": 101,
+                      "categoryId": 1,
+                      "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
+                      "term": "React",
+                    },
+                    Object {
+                      "cardNumber": 102,
+                      "categoryId": 1,
+                      "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
+                      "term": "The Virtual DOM",
+                    },
+                    Object {
+                      "cardNumber": 103,
+                      "categoryId": 1,
+                      "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
+                      "term": "JSX",
+                    },
+                    Object {
+                      "cardNumber": 205,
+                      "categoryId": 2,
+                      "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
+                      "term": "Enzyme",
+                    },
+                  ]
+                }
+                allTerms={[Function]}
+                buttonText="Everything"
+                label=""
+                type="fullDeck"
+              />
+            </div>
           </form>,
         ],
         "className": "mainMenu",
@@ -519,7 +605,7 @@ ShallowWrapper {
               <button
                 autoComplete="fname"
                 autoFocus={true}
-                className="updateNameButton"
+                className="updateNameBtn"
                 type="submit"
               />,
               <h4
@@ -527,58 +613,63 @@ ShallowWrapper {
               >
                 Which terms would you like to review?
               </h4>,
-              <Button
-                buttonText="React Basics"
-                label=""
-                selectDeck={[Function]}
-                type="basicsDeckBtn"
-                updateDeck={[Function]}
-              />,
-              <Button
-                buttonText="React Testing"
-                label=""
-                selectDeck={[Function]}
-                type="testingDeckBtn"
-              />,
-              <Button
-                buttonText="Keep Going"
-                label=""
-                type="previousDeck"
-                updateDeck={[Function]}
-              />,
-              <Button
-                allCards={
-                  Array [
-                    Object {
-                      "cardNumber": 101,
-                      "categoryId": 1,
-                      "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
-                      "term": "React",
-                    },
-                    Object {
-                      "cardNumber": 102,
-                      "categoryId": 1,
-                      "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
-                      "term": "The Virtual DOM",
-                    },
-                    Object {
-                      "cardNumber": 103,
-                      "categoryId": 1,
-                      "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
-                      "term": "JSX",
-                    },
-                    Object {
-                      "cardNumber": 205,
-                      "categoryId": 2,
-                      "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
-                      "term": "Enzyme",
-                    },
-                  ]
-                }
-                buttonText="Everything"
-                label=""
-                type="fullDeck"
-              />,
+              <div
+                className="menuBtnWrapper"
+              >
+                <Button
+                  buttonText="React Basics"
+                  label=""
+                  selectDeck={[Function]}
+                  type="basicsDeckBtn"
+                  updateDeck={[Function]}
+                />
+                <Button
+                  buttonText="React Testing"
+                  label=""
+                  selectDeck={[Function]}
+                  type="testingDeckBtn"
+                />
+                <Button
+                  buttonText="Keep Going"
+                  label=""
+                  type="previousDeck"
+                  updateDeck={[Function]}
+                />
+                <Button
+                  allCards={
+                    Array [
+                      Object {
+                        "cardNumber": 101,
+                        "categoryId": 1,
+                        "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
+                        "term": "React",
+                      },
+                      Object {
+                        "cardNumber": 102,
+                        "categoryId": 1,
+                        "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
+                        "term": "The Virtual DOM",
+                      },
+                      Object {
+                        "cardNumber": 103,
+                        "categoryId": 1,
+                        "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
+                        "term": "JSX",
+                      },
+                      Object {
+                        "cardNumber": 205,
+                        "categoryId": 2,
+                        "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
+                        "term": "Enzyme",
+                      },
+                    ]
+                  }
+                  allTerms={[Function]}
+                  buttonText="Everything"
+                  label=""
+                  type="fullDeck"
+                />
+              </div>,
             ],
             "className": "menuForm",
             "onSubmit": [Function],
@@ -620,7 +711,7 @@ ShallowWrapper {
               "props": Object {
                 "autoComplete": "fname",
                 "autoFocus": true,
-                "className": "updateNameButton",
+                "className": "updateNameBtn",
                 "type": "submit",
               },
               "ref": null,
@@ -642,89 +733,160 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "host",
               "props": Object {
-                "buttonText": "React Basics",
-                "getRandomCard": undefined,
-                "label": "",
-                "selectDeck": [Function],
-                "type": "basicsDeckBtn",
-                "updateDeck": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "buttonText": "React Testing",
-                "getRandomCard": undefined,
-                "label": "",
-                "selectDeck": [Function],
-                "type": "testingDeckBtn",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "buttonText": "Keep Going",
-                "getRandomCard": undefined,
-                "label": "",
-                "type": "previousDeck",
-                "updateDeck": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "allCards": Array [
-                  Object {
-                    "cardNumber": 101,
-                    "categoryId": 1,
-                    "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
-                    "term": "React",
-                  },
-                  Object {
-                    "cardNumber": 102,
-                    "categoryId": 1,
-                    "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
-                    "term": "The Virtual DOM",
-                  },
-                  Object {
-                    "cardNumber": 103,
-                    "categoryId": 1,
-                    "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
-                    "term": "JSX",
-                  },
-                  Object {
-                    "cardNumber": 205,
-                    "categoryId": 2,
-                    "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
-                    "term": "Enzyme",
-                  },
+                "children": Array [
+                  <Button
+                    buttonText="React Basics"
+                    label=""
+                    selectDeck={[Function]}
+                    type="basicsDeckBtn"
+                    updateDeck={[Function]}
+                  />,
+                  <Button
+                    buttonText="React Testing"
+                    label=""
+                    selectDeck={[Function]}
+                    type="testingDeckBtn"
+                  />,
+                  <Button
+                    buttonText="Keep Going"
+                    label=""
+                    type="previousDeck"
+                    updateDeck={[Function]}
+                  />,
+                  <Button
+                    allCards={
+                      Array [
+                        Object {
+                          "cardNumber": 101,
+                          "categoryId": 1,
+                          "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
+                          "term": "React",
+                        },
+                        Object {
+                          "cardNumber": 102,
+                          "categoryId": 1,
+                          "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
+                          "term": "The Virtual DOM",
+                        },
+                        Object {
+                          "cardNumber": 103,
+                          "categoryId": 1,
+                          "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
+                          "term": "JSX",
+                        },
+                        Object {
+                          "cardNumber": 205,
+                          "categoryId": 2,
+                          "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
+                          "term": "Enzyme",
+                        },
+                      ]
+                    }
+                    allTerms={[Function]}
+                    buttonText="Everything"
+                    label=""
+                    type="fullDeck"
+                  />,
                 ],
-                "allTerms": undefined,
-                "buttonText": "Everything",
-                "getRandomCard": undefined,
-                "label": "",
-                "type": "fullDeck",
+                "className": "menuBtnWrapper",
               },
               "ref": null,
-              "rendered": null,
-              "type": [Function],
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "buttonText": "React Basics",
+                    "getRandomCard": undefined,
+                    "hideMenu": undefined,
+                    "label": "",
+                    "selectDeck": [Function],
+                    "type": "basicsDeckBtn",
+                    "updateDeck": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "buttonText": "React Testing",
+                    "getRandomCard": undefined,
+                    "hideMenu": undefined,
+                    "label": "",
+                    "selectDeck": [Function],
+                    "type": "testingDeckBtn",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "buttonText": "Keep Going",
+                    "getRandomCard": undefined,
+                    "hideMenu": undefined,
+                    "label": "",
+                    "type": "previousDeck",
+                    "updateDeck": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "allCards": Array [
+                      Object {
+                        "cardNumber": 101,
+                        "categoryId": 1,
+                        "definition": "A client-side JavaScript framework that allows you to easily and efficiently manipulate the DOM based on application data and how it changes in response to user interaction",
+                        "term": "React",
+                      },
+                      Object {
+                        "cardNumber": 102,
+                        "categoryId": 1,
+                        "definition": "An in-memory object that represents a DOM structure and can be manipulated with JavaScript before updating the real DOM",
+                        "term": "The Virtual DOM",
+                      },
+                      Object {
+                        "cardNumber": 103,
+                        "categoryId": 1,
+                        "definition": "A mix of JavaScript and XML that facilitates rendering the appropriate HTML, lives inside a component",
+                        "term": "JSX",
+                      },
+                      Object {
+                        "cardNumber": 205,
+                        "categoryId": 2,
+                        "definition": "A JavaScript Testing utility for React that makes it easier to test your React Components' output.  It allows test files to be more readable and provides us with helper methods for testing common pieces of functionality.",
+                        "term": "Enzyme",
+                      },
+                    ],
+                    "allTerms": [Function],
+                    "buttonText": "Everything",
+                    "getRandomCard": undefined,
+                    "hideMenu": undefined,
+                    "label": "",
+                    "type": "fullDeck",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
             },
           ],
           "type": "form",

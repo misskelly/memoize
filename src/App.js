@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Header from './header/Header'
-import Menu from './menu/Menu'
 import FlashCards from './flashCards/FlashCards'
 import { removeCard } from './lib/utils'
 
@@ -10,7 +9,8 @@ export default class App extends Component {
     this.state = {
       allCards: [],
       currentDeck: [],
-      currentCard: ''
+      currentCard: '',
+      visibleMenu: true
     }
     this.removeFromDeck = this.removeFromDeck.bind(this);
     this.getRandomCard = this.getRandomCard.bind(this);
@@ -57,23 +57,33 @@ export default class App extends Component {
     console.log(randomNum)
     return randomNum;
   }
+
+  hideMenu = () => {
+    this.setState({ visibleMenu: false })
+  }
     
   render () {
-    const { allCards, currentDeck, currentCard } = this.state;
+    const { allCards, currentDeck, currentCard, visibleMenu } = this.state;
     return (
       <main className='appContainer'>
-        <Header />
-        <Menu allCards={allCards}
-              getRandomCard={this.getRandomCard}
-              updateDeck={this.updateDeck}
-              />
+        {
+          visibleMenu === true &&
+          <Header allCards={allCards}
+                  getRandomCard={this.getRandomCard}
+                  updateDeck={this.updateDeck}
+                  hideMenu={this.hideMenu}
+                  />
+        }
+        {
+          visibleMenu === false &&
         <FlashCards 
                     deck={currentDeck}
                     card={currentCard}
                     getRandomCard={this.getRandomCard}
                     removeFromDeck={this.removeFromDeck}
-                    updateDeck={this.updateDeck}
-        /> 
+                    hideMenu={this.hideMenu}
+                    updateDeck={this.updateDeck}/> 
+        }
       </main>
     );
   }

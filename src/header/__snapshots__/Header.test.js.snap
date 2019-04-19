@@ -19,18 +19,23 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h1
-          className="memozieHeading"
+        <section
+          className="mainHeading"
         >
-          Memoize
-        </h1>,
-        <h2
-          className="subHeading"
-        >
-          Ok brain, time to learn some stuff.
-        </h2>,
+          <h1
+            className="memoizeHeading"
+          >
+            Memoize
+          </h1>
+          <h2
+            className="subHeading"
+          >
+            Time to learn some stuff.
+          </h2>
+        </section>,
+        <Menu />,
       ],
-      "className": "pageHeader",
+      "className": "welcomePage",
     },
     "ref": null,
     "rendered": Array [
@@ -39,24 +44,62 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Memoize",
-          "className": "memozieHeading",
+          "children": Array [
+            <h1
+              className="memoizeHeading"
+            >
+              Memoize
+            </h1>,
+            <h2
+              className="subHeading"
+            >
+              Time to learn some stuff.
+            </h2>,
+          ],
+          "className": "mainHeading",
         },
         "ref": null,
-        "rendered": "Memoize",
-        "type": "h1",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Memoize",
+              "className": "memoizeHeading",
+            },
+            "ref": null,
+            "rendered": "Memoize",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Time to learn some stuff.",
+              "className": "subHeading",
+            },
+            "ref": null,
+            "rendered": "Time to learn some stuff.",
+            "type": "h2",
+          },
+        ],
+        "type": "section",
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
-          "children": "Ok brain, time to learn some stuff.",
-          "className": "subHeading",
+          "allCards": undefined,
+          "getRandomCard": undefined,
+          "hideMenu": undefined,
+          "updateDeck": undefined,
         },
         "ref": null,
-        "rendered": "Ok brain, time to learn some stuff.",
-        "type": "h2",
+        "rendered": null,
+        "type": [Function],
       },
     ],
     "type": "header",
@@ -68,18 +111,23 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1
-            className="memozieHeading"
+          <section
+            className="mainHeading"
           >
-            Memoize
-          </h1>,
-          <h2
-            className="subHeading"
-          >
-            Ok brain, time to learn some stuff.
-          </h2>,
+            <h1
+              className="memoizeHeading"
+            >
+              Memoize
+            </h1>
+            <h2
+              className="subHeading"
+            >
+              Time to learn some stuff.
+            </h2>
+          </section>,
+          <Menu />,
         ],
-        "className": "pageHeader",
+        "className": "welcomePage",
       },
       "ref": null,
       "rendered": Array [
@@ -88,24 +136,62 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Memoize",
-            "className": "memozieHeading",
+            "children": Array [
+              <h1
+                className="memoizeHeading"
+              >
+                Memoize
+              </h1>,
+              <h2
+                className="subHeading"
+              >
+                Time to learn some stuff.
+              </h2>,
+            ],
+            "className": "mainHeading",
           },
           "ref": null,
-          "rendered": "Memoize",
-          "type": "h1",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Memoize",
+                "className": "memoizeHeading",
+              },
+              "ref": null,
+              "rendered": "Memoize",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Time to learn some stuff.",
+                "className": "subHeading",
+              },
+              "ref": null,
+              "rendered": "Time to learn some stuff.",
+              "type": "h2",
+            },
+          ],
+          "type": "section",
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
-            "children": "Ok brain, time to learn some stuff.",
-            "className": "subHeading",
+            "allCards": undefined,
+            "getRandomCard": undefined,
+            "hideMenu": undefined,
+            "updateDeck": undefined,
           },
           "ref": null,
-          "rendered": "Ok brain, time to learn some stuff.",
-          "type": "h2",
+          "rendered": null,
+          "type": [Function],
         },
       ],
       "type": "header",
@@ -135,5 +221,6 @@ ShallowWrapper {
       },
     },
   },
+  Symbol(enzyme.__childContext__): null,
 }
 `;
