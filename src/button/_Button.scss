@@ -16,7 +16,8 @@
   cursor: pointer;
   border-radius: $corners;
   background: transparent;
-  border: 0;
+  border: 1px dotted black;
+  ;
   font-family: $secondary-font;
   font-size: 1.1rem;
   font-weight: 700;

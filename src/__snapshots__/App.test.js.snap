@@ -19,19 +19,13 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Header />,
-        <Menu
+        <Header
           allCards={Array []}
           getRandomCard={[Function]}
+          hideMenu={[Function]}
           updateDeck={[Function]}
         />,
-        <FlashCards
-          card=""
-          deck={Array []}
-          getRandomCard={[Function]}
-          removeFromDeck={[Function]}
-          updateDeck={[Function]}
-        />,
+        false,
       ],
       "className": "appContainer",
     },
@@ -40,40 +34,18 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
         "nodeType": "class",
         "props": Object {
           "allCards": Array [],
           "getRandomCard": [Function],
+          "hideMenu": [Function],
           "updateDeck": [Function],
         },
         "ref": null,
         "rendered": null,
         "type": [Function],
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "card": "",
-          "deck": Array [],
-          "getRandomCard": [Function],
-          "removeFromDeck": [Function],
-          "updateDeck": [Function],
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
+      false,
     ],
     "type": "main",
   },
@@ -84,19 +56,13 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Header />,
-          <Menu
+          <Header
             allCards={Array []}
             getRandomCard={[Function]}
+            hideMenu={[Function]}
             updateDeck={[Function]}
           />,
-          <FlashCards
-            card=""
-            deck={Array []}
-            getRandomCard={[Function]}
-            removeFromDeck={[Function]}
-            updateDeck={[Function]}
-          />,
+          false,
         ],
         "className": "appContainer",
       },
@@ -105,40 +71,18 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
           "nodeType": "class",
           "props": Object {
             "allCards": Array [],
             "getRandomCard": [Function],
+            "hideMenu": [Function],
             "updateDeck": [Function],
           },
           "ref": null,
           "rendered": null,
           "type": [Function],
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "card": "",
-            "deck": Array [],
-            "getRandomCard": [Function],
-            "removeFromDeck": [Function],
-            "updateDeck": [Function],
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
+        false,
       ],
       "type": "main",
     },

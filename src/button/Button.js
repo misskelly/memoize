@@ -4,7 +4,7 @@ export default class Button extends Component {
 
   handleClick = (e) => {
     e.preventDefault();
-    const { flipCard, selectDeck, removeFromDeck, updateDeck, deck, getRandomCard, allTerms, allCards, cardId } = this.props;
+    const { flipCard, selectDeck, removeFromDeck, updateDeck, deck, getRandomCard, allTerms, allCards, cardId, hideMenu } = this.props;
     
     switch (e.target.id) {
       case 'basicsDeckBtn':
@@ -28,7 +28,7 @@ export default class Button extends Component {
         flipCard();
         console.log('So close');
         break
-        case 'wrongAnswerBtn':
+      case 'wrongAnswerBtn':
         updateDeck(deck);
         flipCard();
         console.log('Whomp whomp.  Also you should add that duplicate card functionality here....');
@@ -37,13 +37,14 @@ export default class Button extends Component {
       default:
         console.log('Uh Oh, we have a button problem....')
       }
+    hideMenu();
     getRandomCard();
   }
 
   render() {
     const { type, buttonText, label, className } = this.props;
     return (
-      <div className='cardBtnWrapper'>
+      <>
         <button className='cardBtn' 
                 id={type}
                 onClick={this.handleClick}>
@@ -53,7 +54,7 @@ export default class Button extends Component {
                 className='btnLabel'>
           {label}
         </label>
-      </div>
+      </>
     )
   }
 

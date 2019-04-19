@@ -39,51 +39,20 @@ ShallowWrapper {
             <img
               alt="I am a little trash can! Click me to remove this card from the deck."
               className="icon trash"
+              onClick={[Function]}
               role="button"
               src="trash.png"
             />
             <img
               alt="I am a curved arrow! Click me to filp the card over and see the answer."
               className="icon arrow"
+              onClick={[Function]}
               role="button"
               src="flipArrow.png"
             />
           </div>
         </article>,
-        <article
-          className="definitionSide card"
-        >
-          <p
-            className="definitionText"
-          >
-            Simulates an event on an element by passing the event name string in as an argument.
-          </p>
-          <form
-            className="buttons"
-          >
-            <Button
-              buttonText="Nailed it!"
-              cardId={103}
-              getRandomCard={[MockFunction]}
-              label="Remove this one, I've got it memorized!"
-              removeFromDeck={[MockFunction]}
-              type="removeBtn"
-            />
-            <Button
-              buttonText="So Close!"
-              getRandomCard={[MockFunction]}
-              label="Better come back to that one later."
-              type="almostBtn"
-            />
-            <Button
-              buttonText="Not a clue."
-              cardId={103}
-              getRandomCard={[MockFunction]}
-              label="Yikes, I need extra review on that one!"
-              type="wrongAnswerBtn"
-            />
-          </form>
-        </article>,
+        false,
       ],
       "className": "featuredCard",
       "id": 103,
@@ -107,12 +76,14 @@ ShallowWrapper {
               <img
                 alt="I am a little trash can! Click me to remove this card from the deck."
                 className="icon trash"
+                onClick={[Function]}
                 role="button"
                 src="trash.png"
               />
               <img
                 alt="I am a curved arrow! Click me to filp the card over and see the answer."
                 className="icon arrow"
+                onClick={[Function]}
                 role="button"
                 src="flipArrow.png"
               />
@@ -143,12 +114,14 @@ ShallowWrapper {
                 <img
                   alt="I am a little trash can! Click me to remove this card from the deck."
                   className="icon trash"
+                  onClick={[Function]}
                   role="button"
                   src="trash.png"
                 />,
                 <img
                   alt="I am a curved arrow! Click me to filp the card over and see the answer."
                   className="icon arrow"
+                  onClick={[Function]}
                   role="button"
                   src="flipArrow.png"
                 />,
@@ -164,6 +137,7 @@ ShallowWrapper {
                 "props": Object {
                   "alt": "I am a little trash can! Click me to remove this card from the deck.",
                   "className": "icon trash",
+                  "onClick": [Function],
                   "role": "button",
                   "src": "trash.png",
                 },
@@ -178,6 +152,7 @@ ShallowWrapper {
                 "props": Object {
                   "alt": "I am a curved arrow! Click me to filp the card over and see the answer.",
                   "className": "icon arrow",
+                  "onClick": [Function],
                   "role": "button",
                   "src": "flipArrow.png",
                 },
@@ -191,146 +166,7 @@ ShallowWrapper {
         ],
         "type": "article",
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <p
-              className="definitionText"
-            >
-              Simulates an event on an element by passing the event name string in as an argument.
-            </p>,
-            <form
-              className="buttons"
-            >
-              <Button
-                buttonText="Nailed it!"
-                cardId={103}
-                getRandomCard={[MockFunction]}
-                label="Remove this one, I've got it memorized!"
-                removeFromDeck={[MockFunction]}
-                type="removeBtn"
-              />
-              <Button
-                buttonText="So Close!"
-                getRandomCard={[MockFunction]}
-                label="Better come back to that one later."
-                type="almostBtn"
-              />
-              <Button
-                buttonText="Not a clue."
-                cardId={103}
-                getRandomCard={[MockFunction]}
-                label="Yikes, I need extra review on that one!"
-                type="wrongAnswerBtn"
-              />
-            </form>,
-          ],
-          "className": "definitionSide card",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Simulates an event on an element by passing the event name string in as an argument.",
-              "className": "definitionText",
-            },
-            "ref": null,
-            "rendered": "Simulates an event on an element by passing the event name string in as an argument.",
-            "type": "p",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <Button
-                  buttonText="Nailed it!"
-                  cardId={103}
-                  getRandomCard={[MockFunction]}
-                  label="Remove this one, I've got it memorized!"
-                  removeFromDeck={[MockFunction]}
-                  type="removeBtn"
-                />,
-                <Button
-                  buttonText="So Close!"
-                  getRandomCard={[MockFunction]}
-                  label="Better come back to that one later."
-                  type="almostBtn"
-                />,
-                <Button
-                  buttonText="Not a clue."
-                  cardId={103}
-                  getRandomCard={[MockFunction]}
-                  label="Yikes, I need extra review on that one!"
-                  type="wrongAnswerBtn"
-                />,
-              ],
-              "className": "buttons",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "buttonText": "Nailed it!",
-                  "cardId": 103,
-                  "getRandomCard": [MockFunction],
-                  "label": "Remove this one, I've got it memorized!",
-                  "removeFromDeck": [MockFunction],
-                  "type": "removeBtn",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "buttonText": "So Close!",
-                  "deck": undefined,
-                  "getRandomCard": [MockFunction],
-                  "label": "Better come back to that one later.",
-                  "type": "almostBtn",
-                  "updateDeck": undefined,
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "buttonText": "Not a clue.",
-                  "cardId": 103,
-                  "deck": undefined,
-                  "getRandomCard": [MockFunction],
-                  "label": "Yikes, I need extra review on that one!",
-                  "type": "wrongAnswerBtn",
-                  "updateDeck": undefined,
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": "form",
-          },
-        ],
-        "type": "article",
-      },
+      false,
     ],
     "type": "section",
   },
@@ -355,51 +191,20 @@ ShallowWrapper {
               <img
                 alt="I am a little trash can! Click me to remove this card from the deck."
                 className="icon trash"
+                onClick={[Function]}
                 role="button"
                 src="trash.png"
               />
               <img
                 alt="I am a curved arrow! Click me to filp the card over and see the answer."
                 className="icon arrow"
+                onClick={[Function]}
                 role="button"
                 src="flipArrow.png"
               />
             </div>
           </article>,
-          <article
-            className="definitionSide card"
-          >
-            <p
-              className="definitionText"
-            >
-              Simulates an event on an element by passing the event name string in as an argument.
-            </p>
-            <form
-              className="buttons"
-            >
-              <Button
-                buttonText="Nailed it!"
-                cardId={103}
-                getRandomCard={[MockFunction]}
-                label="Remove this one, I've got it memorized!"
-                removeFromDeck={[MockFunction]}
-                type="removeBtn"
-              />
-              <Button
-                buttonText="So Close!"
-                getRandomCard={[MockFunction]}
-                label="Better come back to that one later."
-                type="almostBtn"
-              />
-              <Button
-                buttonText="Not a clue."
-                cardId={103}
-                getRandomCard={[MockFunction]}
-                label="Yikes, I need extra review on that one!"
-                type="wrongAnswerBtn"
-              />
-            </form>
-          </article>,
+          false,
         ],
         "className": "featuredCard",
         "id": 103,
@@ -423,12 +228,14 @@ ShallowWrapper {
                 <img
                   alt="I am a little trash can! Click me to remove this card from the deck."
                   className="icon trash"
+                  onClick={[Function]}
                   role="button"
                   src="trash.png"
                 />
                 <img
                   alt="I am a curved arrow! Click me to filp the card over and see the answer."
                   className="icon arrow"
+                  onClick={[Function]}
                   role="button"
                   src="flipArrow.png"
                 />
@@ -459,12 +266,14 @@ ShallowWrapper {
                   <img
                     alt="I am a little trash can! Click me to remove this card from the deck."
                     className="icon trash"
+                    onClick={[Function]}
                     role="button"
                     src="trash.png"
                   />,
                   <img
                     alt="I am a curved arrow! Click me to filp the card over and see the answer."
                     className="icon arrow"
+                    onClick={[Function]}
                     role="button"
                     src="flipArrow.png"
                   />,
@@ -480,6 +289,7 @@ ShallowWrapper {
                   "props": Object {
                     "alt": "I am a little trash can! Click me to remove this card from the deck.",
                     "className": "icon trash",
+                    "onClick": [Function],
                     "role": "button",
                     "src": "trash.png",
                   },
@@ -494,6 +304,7 @@ ShallowWrapper {
                   "props": Object {
                     "alt": "I am a curved arrow! Click me to filp the card over and see the answer.",
                     "className": "icon arrow",
+                    "onClick": [Function],
                     "role": "button",
                     "src": "flipArrow.png",
                   },
@@ -507,146 +318,7 @@ ShallowWrapper {
           ],
           "type": "article",
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <p
-                className="definitionText"
-              >
-                Simulates an event on an element by passing the event name string in as an argument.
-              </p>,
-              <form
-                className="buttons"
-              >
-                <Button
-                  buttonText="Nailed it!"
-                  cardId={103}
-                  getRandomCard={[MockFunction]}
-                  label="Remove this one, I've got it memorized!"
-                  removeFromDeck={[MockFunction]}
-                  type="removeBtn"
-                />
-                <Button
-                  buttonText="So Close!"
-                  getRandomCard={[MockFunction]}
-                  label="Better come back to that one later."
-                  type="almostBtn"
-                />
-                <Button
-                  buttonText="Not a clue."
-                  cardId={103}
-                  getRandomCard={[MockFunction]}
-                  label="Yikes, I need extra review on that one!"
-                  type="wrongAnswerBtn"
-                />
-              </form>,
-            ],
-            "className": "definitionSide card",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Simulates an event on an element by passing the event name string in as an argument.",
-                "className": "definitionText",
-              },
-              "ref": null,
-              "rendered": "Simulates an event on an element by passing the event name string in as an argument.",
-              "type": "p",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <Button
-                    buttonText="Nailed it!"
-                    cardId={103}
-                    getRandomCard={[MockFunction]}
-                    label="Remove this one, I've got it memorized!"
-                    removeFromDeck={[MockFunction]}
-                    type="removeBtn"
-                  />,
-                  <Button
-                    buttonText="So Close!"
-                    getRandomCard={[MockFunction]}
-                    label="Better come back to that one later."
-                    type="almostBtn"
-                  />,
-                  <Button
-                    buttonText="Not a clue."
-                    cardId={103}
-                    getRandomCard={[MockFunction]}
-                    label="Yikes, I need extra review on that one!"
-                    type="wrongAnswerBtn"
-                  />,
-                ],
-                "className": "buttons",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "buttonText": "Nailed it!",
-                    "cardId": 103,
-                    "getRandomCard": [MockFunction],
-                    "label": "Remove this one, I've got it memorized!",
-                    "removeFromDeck": [MockFunction],
-                    "type": "removeBtn",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "buttonText": "So Close!",
-                    "deck": undefined,
-                    "getRandomCard": [MockFunction],
-                    "label": "Better come back to that one later.",
-                    "type": "almostBtn",
-                    "updateDeck": undefined,
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "buttonText": "Not a clue.",
-                    "cardId": 103,
-                    "deck": undefined,
-                    "getRandomCard": [MockFunction],
-                    "label": "Yikes, I need extra review on that one!",
-                    "type": "wrongAnswerBtn",
-                    "updateDeck": undefined,
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-              ],
-              "type": "form",
-            },
-          ],
-          "type": "article",
-        },
+        false,
       ],
       "type": "section",
     },

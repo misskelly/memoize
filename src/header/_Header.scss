@@ -1,0 +1,30 @@
+.welcomePage {
+  position: relative;
+  background: center / 105% no-repeat url(assets/notebook.png);
+  height: 100vh;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mainHeading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.memoizeHeading {
+  margin: 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: $primary-font;
+  letter-spacing: .5rem;
+}
+
+.subHeading {
+  // font-size: 1rem;
+  font-family: $cursive-font;
+  margin: 1rem 1rem 5rem 1rem;
+}

@@ -3,9 +3,17 @@
 
 
 body {
+  height: 100vh;
   margin: 0;
   padding: 0;
   font-family: $primary-font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: no-repeat center center url('assets/desk.png');
+  position: relative;
+  color: $main-text-color
+}
+
+.hidden {
+  display: none;
 }
