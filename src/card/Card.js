@@ -42,7 +42,9 @@ export default class Card extends Component {
       {
         termFaceUp &&
         <article className='termSide card'>
-          <h4 className='termText'>{term}</h4>
+          <div className='termWrapper'>
+            <h4 className='termText'>{term}</h4>
+          </div>
           <div className='iconBtnWrapper' >
             <img src={trash} 
                   alt='I am a little trash can! Click me to remove this card from the deck.' 

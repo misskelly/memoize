@@ -2,7 +2,7 @@ import React from 'react';
 import Card from '../card/Card'
 
 export default function FlashCards(props) {
-  const { getRandomCard, removeFromDeck, deck, card, updateDeck } = props;
+  const { getRandomCard, removeFromDeck, deck, card, updateDeck, hideMenu } = props;
   return (
     <section className='flashCards'>
       {
@@ -24,7 +24,7 @@ export default function FlashCards(props) {
         getRandomCard={getRandomCard}
         removeFromDeck={removeFromDeck}
         updateDeck={updateDeck}
-        
+        hideMenu={hideMenu} 
       // addDuplicate={props.card.addDuplicate} 
       />
     }

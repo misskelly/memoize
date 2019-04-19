@@ -96,6 +96,7 @@ export default class Menu extends Component {
                   label=''
                   getRandomCard={getRandomCard}
                   allTerms={this.allTerms}
+                  hideMenu={hideMenu}
                   allCards={allCards}/>
 
           </div>
