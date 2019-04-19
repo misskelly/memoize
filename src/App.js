@@ -16,7 +16,6 @@ export default class App extends Component {
     this.getRandomCard = this.getRandomCard.bind(this);
     this.updateDeck = this.updateDeck.bind(this);
   }
-
   
   componentDidMount() {
     fetch('https://fe-apps.herokuapp.com/api/v1/memoize/1901/kzickmemoizedata/flashcards')
@@ -49,10 +48,12 @@ export default class App extends Component {
     const updatedDeck = removeCard(id, currentDeck);
     this.updateDeck(updatedDeck);
   }
-
+  
   getRandomCard = () => {
-    const randomNum = Math.floor(Math.random() * this.state.currentDeck.length);
-    this.updateCurrentCard(this.state.currentDeck[randomNum]);
+    const { currentDeck } = this.state;
+    const randomNum = Math.floor(Math.random() * currentDeck.length);
+    this.updateCurrentCard(currentDeck[randomNum]);
+    console.log(randomNum)
     return randomNum;
   }
     

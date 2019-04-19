@@ -24,4 +24,10 @@ describe('Card', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should have the proper default state', () => {
+    expect(wrapper.state()).toEqual({
+      termFaceUp: true
+    });
+  });
+
 });
