@@ -3,7 +3,6 @@ import Button from '../button/Button';
 import { filterDeck } from '../lib/utils';
 
 
-
 export default class Menu extends Component {
   constructor(props) {
     super(props);
@@ -11,6 +10,7 @@ export default class Menu extends Component {
       student: 'Friend',
     }
     this.selectDeck = this.selectDeck.bind(this);
+    this.allTerms = this.allTerms.bind(this);
   }
 
   updateStudent = (e) => {
@@ -92,7 +92,7 @@ export default class Menu extends Component {
                   buttonText='Everything'
                   label=''
                   getRandomCard={getRandomCard}
-                  allTerms={this.updateDeck}
+                  allTerms={this.allTerms}
                   allCards={allCards}/>
 
         </form>
